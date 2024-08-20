@@ -67,8 +67,15 @@ const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => 
           </div>
         </header>
         <main>{children}</main>
-        <footer className="py-4 mt-8 text-center text-gray-500">
-          <p>© {new Date().getFullYear()} Minu</p>
+        <footer className="py-4 mt-8 text-center text-gray-500 flex flex-col items-center">
+          <Image 
+            src="/favicon.png" 
+            alt="Favicon" 
+            width={80} 
+            height={80} 
+            className="rounded mb-2"
+          />
+          <p>© {new Date().getFullYear()} Minune</p>
         </footer>
       </div>
     </div>
