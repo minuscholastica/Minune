@@ -23,7 +23,7 @@ export default function About() {
         </p>
         
         <p>
-          Originally from South Korea, I relocated to Singapore to study Intellectual History and Computational Physics at Yale-NUS College. Since then, I've tackled a few exciting projects - here are some:
+          Originally from South Korea, I relocated to Singapore to study Intellectual History and Computational Physics at Yale-NUS College. Since then, I&apos;ve tackled a few exciting projects - here are some:
         </p>
         
         <ul className="list-disc pl-5 space-y-2">
@@ -35,7 +35,7 @@ export default function About() {
         </ul>
         
         <p>
-          I'm always on the lookout to explore exciting problems, solutions, and, of course, effective ways to capture such insights. Drop me a message if any of this resonates with you!
+          I&apos;m always on the lookout to explore exciting problems, solutions, and, of course, effective ways to capture such insights. Drop me a message if any of this resonates with you!
         </p>
       </div>
       
