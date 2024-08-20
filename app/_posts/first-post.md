@@ -37,3 +37,8 @@ Plowing through regulatory compliance firsthand for the past 1.5 years, I spent 
 While I'm moving on from Nervotec and the healthcare sector (for now 😉), I plan to keep working on the side for ways to make regulatory compliance manageable for companies, particularly early-stage startups. Currently building an AI-assisted application for compliance that might be fun! I will definitely share more as I go.
 
 If any of this resonates with you, drop me a message—I'd love to chat! 🙂
+
+Ah, and here's the said certificate - seeing is believing! 
+
+![Screenshot 2024-08-15 at 6.54.42 PM](/Users/minu/Desktop/Screenshot 2024-08-15 at 6.54.42 PM.png)
+
