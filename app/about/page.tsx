@@ -19,7 +19,7 @@ export default function About() {
       
       <div className="space-y-4">
         <p>
-          These days, I work on using AI to transform how we handle data, which ultimately makes using AI easier. On the side, I enjoy crafting narratives that makes complex tech accessible.
+          These days, I solve a chicken-and-egg problem: using AI to transform how we handle data, which is essential to better use of AI. On the side, I enjoy crafting narratives that makes complex tech accessible.
         </p>
         
         <p>
@@ -37,6 +37,7 @@ export default function About() {
         <p>
           I&apos;m always on the lookout to explore exciting problems, solutions, and, of course, effective ways to capture such insights. Drop me a message if any of this resonates with you!
         </p>
+
       </div>
       
       <div className="mt-8 flex justify-center space-x-4">
