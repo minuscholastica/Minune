@@ -40,5 +40,7 @@ If any of this resonates with you, drop me a message—I'd love to chat! 🙂
 
 Ah, and here's the said certificate - seeing is believing! 
 
-![Screenshot 2024-08-15 at 6.54.42 PM](/Users/minu/Desktop/Screenshot 2024-08-15 at 6.54.42 PM.png)
+```markdown
+![Alt text](/Images/firstpost.png)
+```
 
