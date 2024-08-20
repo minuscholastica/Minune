@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
-Sitemap: https://your-custom-domain.com/sitemap.xml
+# Host
+Host: https://minuchoi.com
+
+# Sitemaps
+Sitemap: https://minuchoi.com/sitemap.xml
