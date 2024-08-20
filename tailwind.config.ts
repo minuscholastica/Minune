@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dark-navy': '#00147e', // Adjust this to match your preferred dark navy color
+        'dark-navy': '#002147', // Adjust this to match your preferred dark navy color
       },
     },
   },
