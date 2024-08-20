@@ -3,8 +3,8 @@ import { Metadata } from 'next'
 import ClientLayout from './ClientLayout'
 
 export const metadata: Metadata = {
-  title: 'Your Blog Name',
-  description: 'Your blog description',
+  title: 'Minune',
+  description: 'Untimely Meditations at Minune',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
