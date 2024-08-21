@@ -11,21 +11,41 @@ interface ContentRendererProps {
 
 const ContentRenderer: React.FC<ContentRendererProps> = ({ content }) => {
   const renderContent = () => {
-    const parts = content.split(/(<CalloutBox.*?>.*?<\/CalloutBox>)/s);
-    return parts.map((part, index) => {
-      if (part.startsWith('<CalloutBox')) {
-        const iconMatch = part.match(/icon="([^"]*)"/) || [];
-        const icon = iconMatch[1] || '💡';
-        const innerContent = part.match(/<CalloutBox.*?>(.*?)<\/CalloutBox>/s);
-        return (
-          <CalloutBox key={index} icon={icon}>
-            <div dangerouslySetInnerHTML={{ __html: innerContent ? innerContent[1] : '' }} />
-          </CalloutBox>
+    const parts: JSX.Element[] = [];
+    let lastIndex = 0;
+    const regex = /<CalloutBox.*?>([\s\S]*?)<\/CalloutBox>/g;
+    let match;
+
+    while ((match = regex.exec(content)) !== null) {
+      // Add the text before the match
+      if (match.index > lastIndex) {
+        parts.push(
+          <div key={lastIndex} dangerouslySetInnerHTML={{ __html: content.slice(lastIndex, match.index) }} />
         );
-      } else {
-        return <div key={index} dangerouslySetInnerHTML={{ __html: part }} />;
       }
-    });
+
+      // Process the CalloutBox
+      const calloutContent = match[1];
+      const iconMatch = match[0].match(/icon="([^"]*)"/);
+      const icon = iconMatch ? iconMatch[1] : '💡';
+
+      parts.push(
+        <CalloutBox key={match.index} icon={icon}>
+          <div dangerouslySetInnerHTML={{ __html: calloutContent }} />
+        </CalloutBox>
+      );
+
+      lastIndex = regex.lastIndex;
+    }
+
+    // Add any remaining content after the last match
+    if (lastIndex < content.length) {
+      parts.push(
+        <div key={lastIndex} dangerouslySetInnerHTML={{ __html: content.slice(lastIndex) }} />
+      );
+    }
+
+    return parts;
   };
 
   return (
