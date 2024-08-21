@@ -81,7 +81,10 @@ I did look into some other platforms - like Wix or Substack and whatnot.
 
 In the end, I decided to build a custom blog using Vercel, simply because of 2 reasons:
 
-- I wanted more control over how the blog looked. Essentially I wanted a really simple blog where I will only add more features and asethetic elements whenever I feel apt. 
+- I wanted more control over how the blog looked. Essentially I wanted a really simple blog where I will only add more features and asethetic elements whenever it felt apt. 
+
+  (A side thought, I feel like it helps to feel attached to your writings, and that's why I always felt important about custom blogs, if I ever wanted to write more.)
+
 - I wanted to learn how to build a website.
 
 I can read and modify code, but a total beginner in the world of building. I'm writing down this experience for anyone who has not built before. 
