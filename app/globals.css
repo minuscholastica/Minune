@@ -3,26 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-rgb: 0, 0, 51; /* dark navy */
+  --foreground-rgb: 26, 32, 44;
+  --background-rgb: 255, 255, 255;
 }
 
-.light {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 26, 32, 44;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: rgb(var(--background-rgb));
-}
-
-/* Default dark mode styles */
-body {
-  @apply bg-dark-navy text-white;
-}
-
-/* Light mode styles */
-body.light {
-  @apply bg-white text-black;
+  background: rgb(var(--background-rgb));
 }
