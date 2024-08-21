@@ -16,3 +16,15 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
+
+.callout-note {
+  @apply p-4 my-4 bg-blue-100 border-l-4 border-blue-500;
+}
+
+.callout-tip {
+  @apply p-4 my-4 bg-green-100 border-l-4 border-green-500;
+}
+
+.callout-warning {
+  @apply p-4 my-4 bg-yellow-100 border-l-4 border-yellow-500;
+}
