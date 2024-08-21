@@ -1,3 +1,5 @@
+// components/Callout.tsx
+
 import React from 'react';
 
 type CalloutProps = {

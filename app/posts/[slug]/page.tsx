@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import markdownToHtml from '../../lib/markdownToHtml';
-import Callout from '../../components/Callout';
+import Callout from '@/components/Callout';
 
 export default async function Post({ params }: { params: { slug: string } }) {
   const fullPath = path.join(process.cwd(), 'app/_posts', `${params.slug}.md`);
