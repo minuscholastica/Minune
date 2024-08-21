@@ -1,0 +1,773 @@
+---
+title: 'On Building this Website'
+subtitle: 'Shoutout to the Olickel'
+date: '21 August 2024'
+---
+
+# Slightly Long Preface
+
+Skip ahead to Building this Website part if that's what you're looking for! 
+
+Here are a few on my wishlist.
+
+- I've always wanted to build a custom website. 
+
+  Call me caught up with minor things (phrasing should be conciser here), but I wanted to create something that looked pretty to me to start with. I played around with a few platforms, but none gave me the satisfaction of wow, here's my playground to write as much as I want! 
+
+- I've always wanted to write more, and consistently. 
+
+  Writing is hard. Writing regularly is harder. Once I grew out of the habit, it was really difficult to go back to it. 
+
+I had a few conversations on this with Hrishi, our titular (or in this case, sub-titular character) who has an awesome habit of writing (and awesome in a lot of ways, most recently, I enjoyed our small chats about running at 160 bpm). 
+
+> This is his blog by the way, check it out:
+> https://olickel.com/
+>
+> My current favorite is *"Workhorse models and racehorse models"*
+
+The point is, I think the best way to learn anything is to learn from someone who's been doing it for years. Hrishi's been writing in all the years I've known him, and I enjoyed reading every one of them. The cool thing about knowing the writer behind one of your favorite writings is you can get some good tips at random, say, while you're eating some good biryani together. 
+
+Here are some I liked: 
+
+1. Just write. 
+
+This was the advice and instruction that I found quite useful (and have struggled with for quite a while): *"Start one draft every three days (regardless of the completion of the previous one) and put down at least four bullet points per day, one draft or more."*
+
+But came a huge writer's block - what do I write about? How do I write about it? 
+
+2. Writing, basically just talking?
+
+Then, I chatted with him about one of his projects Lumentis. Lumentis is basically an application Hrishi built and it does a simple, but life-changing thing. You can record a meeting, or more usefully for me, yourself talking in your walks, and then have Lumentis create your mumbo-jumbo ideas into a beautifully crafted documentation - I mean, ideas in aesthetic forms, who doesn't want that?
+
+That actually made me overcome a big part of my writer's blog. In a world where Lumentis exists, I'm basically writing every day, and I'm very chatty. It can't be that hard. 
+
+3. Put it out there - for the hypes 
+
+Hrishi shares a lot of cool ideas, which I love hearing about. That got me thinking that I alraedy have my audience in friends, who do listen to my 3 hours of talking of most recently, how fascinating Dutch is as a language or how cool some House tracks I've discovered (Total eargasm, by the way.)
+
+So I started writing for those around me, and shared as much as possible.
+
+That's the bit about overcoming writer's block.
+
+Then, I decided to cross out the two items in my bucket list at once.
+
+Leveraging (again) one of my favorite blog posts, I decided to create a blog. It was pretty simple, just took a lot of time figuring out where and how to start.
+
+This is why I decided to write this, for those out there who has never built a website, but like the aesthetics of this one, and want to build it yourself.
+
+# How I Built this Website 
+
+I did look into some other platforms - like Wix or Substack and whatnot.
+
+In the end, I decided to build a custom blog using Vercel, simply because of 2 reasons:
+
+- I wanted more control over how the blog looked. Essentially I wanted a really simple blog where I will only add more features and asethetic elements whenever I feel apt. 
+- I wanted to learn how to build a website.
+
+I can read and modify code, but a total beginner in the world of building. I'm writing down this experience for anyone who has not built before. 
+
+## 1. Create a project in your local envrionment
+
+Choose a preferred framework (e.g., Next.js, React, Vue.js). 
+
+I chose Next.js. Why?
+
+### (1) Set up your development environment
+
+So, make sure you have Node.js installed on your computer. You can download it from nodejs.org.
+
+> Open the terminal:
+>
+> - On Windows: Press Win + R, type "cmd" and press Enter.
+> - On macOS: Press Cmd + Space, type "Terminal" and press Enter.
+> - On Linux: The method varies by distribution, but you can usually press Ctrl + Alt + T.
+
+> How to check if you have Node.js installed? (Maybe you don't remember):
+>
+> ```
+> node --version
+> ```
+>
+> If Node.js is installed, you'll see a version number displayed, like this: v18.16.0.
+>
+> If it's not installed, an error message would pop up. In that case, you can ou can download and install it from the official Node.js website (https://nodejs.org/). The LTS (Long Term Support) version is recommended, apparently. Of course, to verify that the installation was successful, you can run the `node --version` command again.
+
+### (2) Create a new Next.js project
+
+Open your terminal and run:
+
+```
+npx create-next-app@latest my-blog
+cd my-blog
+```
+
+<!--Useful terminal command #1:-->
+
+<!--"cd" to enter a folder.-->
+
+<!--"cd .." to exit-->
+
+<!--"ls" to see what's inside the folder--> 
+
+Then, it will ask you bunch of configuration questions.
+
+✔ **Would you like to use TypeScript?** … Yes, easier. 
+
+> It's a typed superset of JavaScript that helps catch errors early and improves code quality.
+
+✔ **Would you like to use ESLint?** … Yes, easier too. 
+
+> It's a tool that identifies and reports on patterns in JavaScript, helping maintain code quality and consistency.
+
+ ✔ **Would you like to use Tailwind CSS?** … Yes, I found it useful. 
+
+>  It's a CSS framework that allows quick UI development with pre-built classes.
+
+ ✔ **Would you like to use** `src/` **directory?** … I said no, but personal preference for how to structure folders.
+
+> It's an optional structure that places all your source code in a 'src' folder for better organization.
+
+✔ **Would you like to use App Router? (recommended)** … Yes, routing feature is cool.
+
+> Next.js 13+ feature that provides a new file-system based router with enhanced features and improved performance.
+
+✔ **Would you like to customize the default import alias (@/\*)?** … No, simply because I wanted minimal configuration effort, if not cruicial. 
+
+> A shortcut for importing modules, typically set to the root of your project for easier and cleaner imports.
+
+That's it, you just got yourself a few toolkits.
+
+### (3) Create blog structure
+
+I'm just going to assume your configuration looks like mine. 
+
+With App Router option you chose above, your folders would look something like this:
+
+my-blog/
+├── app/
+├── public/
+├── package.json
+├── tsconfig.json
+└── ...
+
+Here are some commands to run to make necessary directories and files:
+
+```
+mkdir -p app/posts
+touch app/layout.tsx app/page.tsx
+mkdir components
+touch components/PostList.tsx
+```
+
+And then, once done, separately:
+
+```
+mkdir -p 'app/posts/[slug]'
+touch 'app/posts/[slug]/page.tsx'
+```
+
+This will give you something like this:
+
+my-blog/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── posts/
+│   │   └── [slug]/
+│   │       └── page.tsx
+├── components/
+│   └── PostList.tsx
+├── public/
+├── package.json
+└── tsconfig.json
+
+<!--Useful terminal command #2:-->
+
+<!--Delete the entire line:-->
+
+- <!--On macOS and Linux: Press Ctrl + U-->
+- <!--On Windows: Press Esc-->
+
+<!--Clear the entire screen (this doesn't delete the input, but gives you a clean slate):-->
+
+- <!--On most systems: Type `clear` and press Enter-->
+- <!--On Windows Command Prompt: Type `cls` and press Enter-->
+
+### (4) Add some content to the file
+
+#### 1.app/layout.tsx
+
+This file will determine the layout of your blog. Later on, as you add more things, you can create a separate file for complicated designs, and link it to this main layout.tsx file with import function. (Just how in the code below, we are calling in stylistic features from globals.css, also created under "app" folder.)
+
+```
+import './globals.css'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Minune',
+  description: 'Untimely Meditations from Minune',
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body className="max-w-2xl mx-auto px-4">
+
+        <header className="py-4">
+          <nav>
+            <a href="/" className="text-blue-600 hover:text-blue-800">Home</a>
+          </nav>
+        </header>
+        <main>{children}</main>
+        <footer className="py-4 mt-8 text-center text-gray-500">
+          © {new Date().getFullYear()} My Blog
+        </footer>
+
+      </body>
+     </html>
+  )
+}
+```
+
+#### 2.app/page.tsx
+
+This file fetches your "posts" (Individual blog articles or sub-pages). 
+
+```
+import PostList from '../components/PostList'
+
+export default function Home() {
+  // For now, we'll use dummy data. Later, we'll fetch real posts.
+  const posts = [
+    { slug: 'first-post', title: 'My First Post', excerpt: 'This is my very first blog post!' },
+    { slug: 'second-post', title: 'Another Post', excerpt: 'Here\'s another interesting post.' },
+  ]
+
+  return (
+
+    <div>
+      <h1 className="text-3xl font-bold mb-4">Minune</h1>
+      <PostList posts={posts} />
+    </div>
+
+  )
+}
+
+```
+
+#### 3. components/PostList.tsx
+
+This file grabs a list of your articles. 
+
+```
+import Link from 'next/link'
+
+type Post = {
+  slug: string;
+  title: string;
+  excerpt: string;
+}
+
+export default function PostList({ posts }: { posts: Post[] }) {
+  return (
+    <ul className="space-y-4">
+      {posts.map((post) => (
+        <li key={post.slug}>
+          <Link href={`/posts/${post.slug}`} className="block hover:bg-gray-100 p-4 rounded">
+            <h2 className="text-xl font-bold">{post.title}</h2>
+            <p className="text-gray-600">{post.excerpt}</p>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+```
+
+#### 4. app/posts/[slug]/page.tsx
+
+This file sets up your individual article page. 
+
+```
+export default function Post({ params }: { params: { slug: string } }) {
+  // For now, we'll just display the slug. Later, we'll fetch the actual post content.
+  return (
+    <div>
+      <h1 className="text-3xl font-bold mb-4">Post: {params.slug}</h1>
+      <p>This is where the content for {params.slug} will go.</p>
+    </div>
+  )
+}
+```
+
+Yay! And we now have a home page and individual sub-pages, almost.
+
+### (5) Now, set up a routing system
+
+You probably want to just write, and have your website your content in without having to do something each time.
+
+#### 1. Create a directory for your blog posts. 
+
+<!--Run all commands in your root directory (In our case, "my-blog")-->
+
+```
+mkdir -p app/_posts
+```
+
+#### 2. Create a couple of sample markdown files for your blog posts
+
+```
+touch app/_posts/first-post.md app/_posts/second-post.md
+```
+
+#### 3. Put some words in the markdown files
+
+This way, it would be easier to check the setup.
+
+```
+---
+title: 'My First Blog Post'
+date: '2024-08-20'
+---
+
+# Hello world!
+
+I'm excited to be making this! 
+```
+
+Do the same for the second one - always helpful to check the setup with two, or three, for that matter.
+
+Now, why write in markdown files? It's easier for our website to process it.
+
+#### 4. So, we will install a package to help us parse markdown files
+
+Run this in the terminal:
+
+```
+npm install gray-matter
+```
+
+What does it do?
+
+#### 5. Similarly, we'll make a utility function to read and parase markdown files.
+
+Create a new folder:
+
+```
+mkdir -p app/lib
+```
+
+And then a new file: 
+
+```
+touch app/lib/posts.ts
+```
+
+Then, populate it with something like this:
+
+<!--You can directly add content in the terminal by using a text editor like nano:-->
+
+```
+nano app/lib/posts.ts
+```
+
+Anways, pouplate it, whether from the file opened from folder or the terminal: 
+
+```
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+
+const postsDirectory = path.join(process.cwd(), 'app/_posts')
+
+export function getSortedPostsData() {
+  // Get file names under /posts
+  const fileNames = fs.readdirSync(postsDirectory)
+  const allPostsData = fileNames.map(fileName => {
+    // Remove ".md" from file name to get id
+    const id = fileName.replace(/\.md$/, '')
+
+    // Read markdown file as string
+    const fullPath = path.join(postsDirectory, fileName)
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
+    
+    // Use gray-matter to parse the post metadata section
+    const matterResult = matter(fileContents)
+    
+    // Combine the data with the id
+    return {
+      id,
+      ...(matterResult.data as { date: string; title: string })
+    }
+
+  })
+  // Sort posts by date
+  return allPostsData.sort((a, b) => {
+    if (a.date < b.date) {
+      return 1
+    } else {
+      return -1
+    }
+  })
+}
+```
+
+Now, your folder structure would look something like this:
+
+my-blog/
+├── app/
+│   ├── _posts/
+│   │   ├── first-post.md
+│   │   └── second-post.md
+│   ├── lib/
+│   │   └── posts.ts
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── posts/
+│       └── [slug]/
+│           └── page.tsx
+├── components/
+│   └── PostList.tsx
+└── ... (other files and directories)
+
+### (6) We'll have the main page to display the actual posts
+
+This means we'll get to use function getSortedPostsData(), the one we just defined in our app/lib/posts.ts, in our app/page.tsx file. 
+
+#### 1. Open the `app/page.tsx` file.
+
+Replace the existing content with the following: 
+
+```
+import { getSortedPostsData } from './lib/posts'
+import PostList from '../components/PostList'
+
+export default function Home() {
+  const posts = getSortedPostsData()
+
+  return (
+    <div>
+      <h1 className="text-3xl font-bold mb-4">Welcome to My Blog</h1>
+      <PostList posts={posts} />
+    </div>
+  )
+}
+```
+
+#### 2. We also need to update our components/PostList.tsx.
+
+Open it, and replace the content with this:
+
+```
+import Link from 'next/link'
+
+type Post = {
+  id: string;
+  title: string;
+  date: string;
+}
+
+export default function PostList({ posts }: { posts: Post[] }) {
+  return (
+    <ul className="space-y-4">
+      {posts.map((post) => (
+        <li key={post.id}>
+          <Link href={`/posts/${post.id}`} className="block hover:bg-gray-100 p-4 rounded">
+            <h2 className="text-xl font-bold">{post.title}</h2>
+            <p className="text-gray-600">{post.date}</p>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+```
+
+This will fetch the actual blog posts from our markdown files and display them on the main page.
+
+#### 3. Then, we'll update our individual blog post page to have actual content.
+
+Open `app/posts/[slug]/page.tsx` and replace its content with:
+
+```
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+
+export default function Post({ params }: { params: { slug: string } }) {
+  const fullPath = path.join(process.cwd(), 'app/_posts', `${params.slug}.md`)
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const { data, content } = matter(fileContents)
+
+  return (
+    <div>
+      <h1 className="text-3xl font-bold mb-4">{data.title}</h1>
+      <p className="text-gray-500 mb-4">{data.date}</p>
+      <div dangerouslySetInnerHTML={{ __html: content }} />
+    </div>
+  )
+}
+```
+
+This will display the full content of each blog post on its individual page.
+
+That's it, really!
+
+## 2. Play with it 
+
+Before you deploy your blog, you would want to make chagnes. 
+
+You can test it as you make changes by running this in your terminal:
+
+```
+npm run dev
+```
+
+<!--If you want to exit development server, use these:-->
+
+<!--On macOS: Press Control + C-->
+
+<!--On Windows/Linux: Press Ctrl + C-->
+
+<!--When you exit, the blog won't be accessible at localhost:3000 until you start it again with `npm run dev`.-->
+
+Once it runs, open your browser and go to `http://localhost:3000`.
+
+That's where you can see your new born child in its full glory.
+
+### Debugging Tools 
+
+Well, you might run into some problems, in which case, add debugging tools!
+
+Depending on where you're seeing the issues, modify your files:
+
+1. app/page.tsx with debugging information
+
+```
+import { getSortedPostsData } from './lib/posts'
+import PostList from '../components/PostList'
+
+export default function Home() {
+  const posts = getSortedPostsData()
+  console.log('Posts:', JSON.stringify(posts, null, 2)) // More detailed logging
+
+  return (
+    <div>
+      <h1 className="text-3xl font-bold mb-4">Welcome to My Blog</h1>
+      {posts.length > 0 ? (
+        <PostList posts={posts} />
+      ) : (
+        <p>No posts found.</p>
+      )}
+      <pre className="mt-4 p-4 bg-gray-100 rounded">
+        {JSON.stringify(posts, null, 2)}
+      </pre>
+    </div>
+  )
+}
+```
+
+2. components/PostList.tsx with debugging information 
+
+```
+import Link from 'next/link'
+
+type Post = {
+  id: string;
+  title: string;
+  date: string;
+}
+
+export default function PostList({ posts }: { posts: Post[] }) {
+  console.log('PostList received posts:', posts) // Add this line for debugging
+
+  return (
+    <ul className="space-y-4">
+      {posts.map((post) => (
+        <li key={post.id}>
+          <Link href={`/posts/${post.id}`} className="block hover:bg-gray-100 p-4 rounded">
+            <h2 className="text-xl font-bold">{post.title || 'No title'}</h2>
+            <p className="text-gray-600">{post.date || 'No date'}</p>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+```
+
+3. app/lib/posts.tsx with debugging information
+
+```
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+
+const postsDirectory = path.join(process.cwd(), 'app/_posts')
+
+export function getSortedPostsData() {
+  // Get file names under /posts
+  const fileNames = fs.readdirSync(postsDirectory)
+  const allPostsData = fileNames.map(fileName => {
+    // Remove ".md" from file name to get id
+    const id = fileName.replace(/\.md$/, '')
+
+    // Read markdown file as string
+    const fullPath = path.join(postsDirectory, fileName)
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
+
+    // Use gray-matter to parse the post metadata section
+    const matterResult = matter(fileContents)
+
+    console.log(`Parsing ${fileName}:`, matterResult.data)  // Add this line for debugging
+
+    // Combine the data with the id
+    return {
+      id,
+      title: matterResult.data.title || 'No title',  // Provide default values
+      date: matterResult.data.date || 'No date'
+    }
+  })
+  // Sort posts by date
+  return allPostsData.sort((a, b) => {
+    if (a.date < b.date) {
+      return 1
+    } else {
+      return -1
+    }
+  })
+}
+```
+
+This will tell you where things are funky. 
+
+Honestly, at this stage, there are only a few things that can go wrong:
+
+1. The markdown files are NOT being read correctly
+2. The frontmatter is NOT being parsed properly
+3. The title and date are NOT being extracted from the frontmatter
+
+I noticed that sometimes clearing browser cache helps, or restarting the development server with good ol' 
+
+```
+npm run dev.
+```
+
+Once you like what you're seeing at http://localhost:3000, then you can start adding more stuff.
+
+If a particular page seems to be a problem, you can try if you can acess that page (e.g. http://localhost:3000/first-post) to see what's up. 
+
+## 3. Deploy!
+
+1. ### Push your project to a GitHub repository
+
+#### (1) Create repo!
+
+- In your Github, click on the **+** icon in the upper right corner and select **New repository**.
+- Name your repository (e.g., `my-blog`), add a description if you want, and choose public or private. No need for additional things like REDAME, as you already have a full thing set up. 
+- Creat the repo!
+
+#### (2) Initialize a git repository in your project directory, my-blog folder. 
+
+```
+git init
+```
+
+#### (3) Add your files to repo 
+
+```
+git add .
+```
+
+#### (4) Commit changes
+
+```
+git commit -m "Initial commit"
+```
+
+#### (5) Link local repo to the Github repo
+
+```
+git remote add origin git@github.com:your-username/[repo-name].git
+```
+
+### 2. Run Vercel - I used npx to run it.
+
+```
+npx vercel
+```
+
+Some questions it might start asking:
+
+- When asked "Set up and deploy "~/path/to/your/project"?" Yes, I'm here for that.
+- When asked "Link to existing project?" Nope, didn't want to link. 
+- For "What's your project's name?" Fun name - minune! 
+- For "In which directory is your code located?", press Enter to use the current directory (./), unless your code is in a subdirectory.
+
+### 3. Debugging 
+
+For any errors, try building your project locally again by running:
+
+```
+npm run build
+```
+
+It will tell you what's up. Sort that out, and then run `npx vercel` again. 
+
+#### 4. Deployed!  
+
+If no issue, you would have successfully deployed! 
+
+For any changes (mostly your new articles) you make once the blog is live, simply need to repeat:
+
+```
+git add .
+```
+
+```
+git commit -m "Description of your changes"
+```
+
+```
+git push
+```
+
+```
+npx vercel —prod
+```
+
+# Quick Wrapup
+
+I wrote this because I wanted to remember what confused the first time.
+
+Claude as always is really helpful, ask it for any funky behaviours! 
+
+When asking, useful to provide the folder structure tree, like this one:
+
+my-blog/
+├── app/
+│   ├── _posts/
+│   │   ├── first-post.md
+│   │   └── second-post.md
+│   ├── lib/
+│   │   └── posts.ts
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── posts/
+│       └── [slug]/
+│           └── page.tsx
+├── components/
+│   └── PostList.tsx
+└── ... (other files and directories)
+
+That said, this is me getting pretty excited to write more, and stack it in this new blog.
+
+Briefly on the name of the blog:
+
+Minu is obviously my name, Minune (미누네) in Korean is Minu's place.
+
+Very randomly, Minune in Romanian means wonderful, so there's that ;) 
