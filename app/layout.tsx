@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   },
 }
 
+// In layout.tsx
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -18,9 +19,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
       </head>
-      <body>
+      <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
         <ClientLayout>
-          {children}
+          <main className="max-w-none">
+            {children}
+          </main>
         </ClientLayout>
       </body>
     </html>

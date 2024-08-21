@@ -6,24 +6,14 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: 'class', // Enable dark mode
+  darkMode: 'class',
   theme: {
     extend: {
-      colors: {
-        'dark-navy': '#1e3a8a',
-      },
-      backgroundColor: {
-        light: '#ffffff',
-        dark: '#1a202c',
-      },
-      textColor: {
-        light: '#1a202c',
-        dark: '#ffffff',
-      },
+      // You can keep your custom colors here if needed
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    // Remove @tailwindcss/typography if you're not using it
   ],
 }
 
