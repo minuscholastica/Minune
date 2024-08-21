@@ -38,9 +38,7 @@ While I'm moving on from Nervotec and the healthcare sector (for now 😉), I pl
 
 If any of this resonates with you, drop me a message—I'd love to chat! 🙂
 
-Ah, and here's the said certificate - seeing is believing! 
+Ah, and here's the said certificate - seeing is believing:
 
-```markdown
-![Alt text](/Images/firstpost.png)
-```
+![ISO 13485 Certificate](/Images/firstpost.png)
 
