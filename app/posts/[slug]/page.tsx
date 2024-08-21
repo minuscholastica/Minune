@@ -4,7 +4,9 @@ import path from 'path';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { PostData } from '../../lib/posts';  // Updated import path
+import { PostData } from '../../lib/posts';
+import Image from 'next/image';
+import { FaTwitter, FaGithub } from 'react-icons/fa';
 
 export default function Post({ params }: { params: { slug: string } }) {
   const fullPath = path.join(process.cwd(), 'app/_posts', `${params.slug}.md`);
@@ -18,7 +20,10 @@ export default function Post({ params }: { params: { slug: string } }) {
       {postData.subtitle && (
         <p className="text-xl text-gray-500 mb-4">{postData.subtitle}</p>
       )}
-      <p className="text-gray-400 text-sm mb-8">{postData.date}</p>
+      
+      {/* Divider */}
+      <hr className="my-8 border-t border-gray-300 dark:border-gray-700" />
+
       <div className="prose prose-lg dark:prose-invert max-w-none">
         <ReactMarkdown 
           remarkPlugins={[remarkGfm]}
@@ -36,6 +41,31 @@ export default function Post({ params }: { params: { slug: string } }) {
         >
           {content}
         </ReactMarkdown>
+      </div>
+
+      {/* Author section */}
+      <div className="mt-12 pt-8 border-t border-gray-300 dark:border-gray-700 flex items-center justify-between">
+        <div className="flex items-center">
+          <Image 
+            src="/Minu2.jpeg"  // Make sure this path is correct
+            alt="Author"
+            width={60}
+            height={60}
+            className="rounded-full mr-4"
+          />
+          <div>
+            <h3 className="font-bold">Minu Choi</h3>
+            <p className="text-gray-500 text-sm">{postData.date}</p>
+          </div>
+        </div>
+        <div className="flex space-x-4">
+          <a href="https://twitter.com/minune29" target="_blank" rel="noopener noreferrer">
+            <FaTwitter size={24} className="text-gray-600 hover:text-blue-400" />
+          </a>
+          <a href="https://github.com/minuscholastica" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={24} className="text-gray-600 hover:text-gray-900" />
+          </a>
+        </div>
       </div>
     </div>
   );
