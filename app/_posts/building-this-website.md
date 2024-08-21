@@ -30,11 +30,7 @@ Here are a few on my wishlist.
 
 I had a few conversations on this with Hrishi, our titular (or in this case, sub-titular) character for this post (and maybe good to mention that his last name is Olickel), who has an awesome habit of writing and has been a rock in my writing attempts, or any projects in general. 
 
-<div class="callout-note">
-  <h4>By the way</h4>
-  <p>This is his blog check it out: <a href="https://olickel.com/">https://olickel.com/</a></p>
-  <p>My current favorite is 'Workhorse models and racehorse models'</p>
-</div>
+<Callout> This is his blog by the way. Check out: https://olickel.com/">https://olickel.com/. </Callout>
 
 I often think the best way to learn anything is to learn from and observe someone who's been doing it for years. Hrishi's been writing in all the years I've known him, and I enjoyed reading them. 
 
@@ -56,10 +52,7 @@ What helped me climb out of my writer's block (where dreams go to die, just kidd
 
 You can record a meeting, or more usefully for me, yourself talking in your walks or runs, and then have Lumentis create your mumbo-jumbo ideas into a beautifully crafted documentation - I mean, ideas in aesthetic forms, who doesn't want that?
 
-<div class="callout-note">
-  <h4>By the way</h4>
-  <p>here's Lumentis. Give it a go, I love it. <a href="https://github.com/hrishioa/lumentis.</a></p>
-</div>
+<Callout> Here's Lumentis. Give it a go, I love it: https://github.com/hrishioa/lumentis.  </Callout>
 
 That actually made me overcome a big part of my writer's blog. 
 
