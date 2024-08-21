@@ -4,9 +4,11 @@ subtitle: 'Shoutout to the Olickel'
 date: '21 August 2024'
 ---
 
-# Slightly Long Preface
+## Part 1: Slightly Long Preface
 
+```
 Skip ahead to Building this Website part if that's what you're looking for! 
+```
 
 Here are a few on my wishlist.
 
@@ -29,19 +31,24 @@ The point is, I think the best way to learn anything is to learn from someone wh
 
 Here are some I liked: 
 
-1. Just write. 
+1. **Just write.** 
 
-This was the advice and instruction that I found quite useful (and have struggled with for quite a while): *"Start one draft every three days (regardless of the completion of the previous one) and put down at least four bullet points per day, one draft or more."*
+This was the advice and instruction that I found quite useful (and have struggled with for quite a while): 
+
+*"Start one draft every three days (regardless of the completion of the previous one) and put down at least four bullet points per day, one draft or more."*
 
 But came a huge writer's block - what do I write about? How do I write about it? 
 
-2. Writing, basically just talking?
+2. **Writing, basically just talking?**
 
 Then, I chatted with him about one of his projects Lumentis. Lumentis is basically an application Hrishi built and it does a simple, but life-changing thing. You can record a meeting, or more usefully for me, yourself talking in your walks, and then have Lumentis create your mumbo-jumbo ideas into a beautifully crafted documentation - I mean, ideas in aesthetic forms, who doesn't want that?
 
+> Here's Lumentis: https://github.com/hrishioa/lumentis
+> Check it out, I love it. 
+
 That actually made me overcome a big part of my writer's blog. In a world where Lumentis exists, I'm basically writing every day, and I'm very chatty. It can't be that hard. 
 
-3. Put it out there - for the hypes 
+3. **Put it out there - for the hypes** 
 
 Hrishi shares a lot of cool ideas, which I love hearing about. That got me thinking that I alraedy have my audience in friends, who do listen to my 3 hours of talking of most recently, how fascinating Dutch is as a language or how cool some House tracks I've discovered (Total eargasm, by the way.)
 
@@ -55,7 +62,9 @@ Leveraging (again) one of my favorite blog posts, I decided to create a blog. It
 
 This is why I decided to write this, for those out there who has never built a website, but like the aesthetics of this one, and want to build it yourself.
 
-# How I Built this Website 
+------
+
+## Part 2: How I Built this Website 
 
 I did look into some other platforms - like Wix or Substack and whatnot.
 
@@ -101,13 +110,15 @@ npx create-next-app@latest my-blog
 cd my-blog
 ```
 
-<!--Useful terminal command #1:-->
+```latex
+*Useful terminal command #1:*
 
-<!--"cd" to enter a folder.-->
+*"cd" to enter a folder.*
 
-<!--"cd .." to exit-->
+*"cd .." to exit*
 
-<!--"ls" to see what's inside the folder--> 
+*"ls" to see what's inside the folder*
+```
 
 Then, it will ask you bunch of configuration questions.
 
@@ -143,12 +154,14 @@ I'm just going to assume your configuration looks like mine.
 
 With App Router option you chose above, your folders would look something like this:
 
+```
 my-blog/
 ├── app/
 ├── public/
 ├── package.json
 ├── tsconfig.json
 └── ...
+```
 
 Here are some commands to run to make necessary directories and files:
 
@@ -168,6 +181,7 @@ touch 'app/posts/[slug]/page.tsx'
 
 This will give you something like this:
 
+```
 my-blog/
 ├── app/
 │   ├── layout.tsx
@@ -180,18 +194,23 @@ my-blog/
 ├── public/
 ├── package.json
 └── tsconfig.json
+```
 
-<!--Useful terminal command #2:-->
 
-<!--Delete the entire line:-->
 
-- <!--On macOS and Linux: Press Ctrl + U-->
-- <!--On Windows: Press Esc-->
+```latex
+*Useful terminal command #2*
 
-<!--Clear the entire screen (this doesn't delete the input, but gives you a clean slate):-->
+*Delete the entire line:*
 
-- <!--On most systems: Type `clear` and press Enter-->
-- <!--On Windows Command Prompt: Type `cls` and press Enter-->
+- *On macOS and Linux: Press Ctrl + U*
+- *On Windows: Press Esc*
+
+*Clear the entire screen (this doesn't delete the input, but gives you a clean slate):*
+
+- *On most systems: Type `clear` and press Enter*
+- *On Windows Command Prompt: Type `cls` and press Enter*
+```
 
 ### (4) Add some content to the file
 
@@ -312,7 +331,10 @@ You probably want to just write, and have your website your content in without h
 
 #### 1. Create a directory for your blog posts. 
 
-<!--Run all commands in your root directory (In our case, "my-blog")-->
+```latex
+*Useful terminal interjection #3:*
+*Run all commands in your root directory (In our case, "my-blog")* 
+```
 
 ```
 mkdir -p app/_posts
@@ -369,9 +391,10 @@ touch app/lib/posts.ts
 
 Then, populate it with something like this:
 
-<!--You can directly add content in the terminal by using a text editor like nano:-->
+```latex
+*Useful terminal interjection #4:*
+You can directly add content in the terminal by using a text editor like nano:
 
-```
 nano app/lib/posts.ts
 ```
 
@@ -418,6 +441,7 @@ export function getSortedPostsData() {
 
 Now, your folder structure would look something like this:
 
+```
 my-blog/
 ├── app/
 │   ├── _posts/
@@ -433,6 +457,9 @@ my-blog/
 ├── components/
 │   └── PostList.tsx
 └── ... (other files and directories)
+```
+
+
 
 ### (6) We'll have the main page to display the actual posts
 
@@ -527,13 +554,16 @@ You can test it as you make changes by running this in your terminal:
 npm run dev
 ```
 
-<!--If you want to exit development server, use these:-->
+```latex
+*Useful terminal interjection #5:*
 
-<!--On macOS: Press Control + C-->
+If you want to exit development server, use these:
 
-<!--On Windows/Linux: Press Ctrl + C-->
+- On macOS: Press Control + C
+- On Windows/Linux: Press Ctrl + C
 
-<!--When you exit, the blog won't be accessible at localhost:3000 until you start it again with `npm run dev`.-->
+When you exit, the blog won't be accessible at localhost:3000 until you start it again with `npm run dev`.
+```
 
 Once it runs, open your browser and go to `http://localhost:3000`.
 
@@ -748,6 +778,7 @@ Claude as always is really helpful, ask it for any funky behaviours!
 
 When asking, useful to provide the folder structure tree, like this one:
 
+```
 my-blog/
 ├── app/
 │   ├── _posts/
@@ -763,6 +794,7 @@ my-blog/
 ├── components/
 │   └── PostList.tsx
 └── ... (other files and directories)
+```
 
 That said, this is me getting pretty excited to write more, and stack it in this new blog.
 
