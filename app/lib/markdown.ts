@@ -1,17 +1,15 @@
 import { remark } from 'remark';
 import html from 'remark-html';
 import gfm from 'remark-gfm';
+import { Plugin } from 'unified';
+import { Node } from 'unist';
 import { visit } from 'unist-util-visit';
 
-const calloutBoxPlugin = () => {
-  return (tree) => {
-    visit(tree, 'html', (node) => {
+const preserveCalloutBox: Plugin = () => {
+  return (tree: Node) => {
+    visit(tree, 'html', (node: any) => {
       if (node.value.startsWith('<CalloutBox')) {
-        const iconMatch = node.value.match(/icon="([^"]+)"/);
-        const icon = iconMatch ? iconMatch[1] : '💡';
-        node.value = node.value
-          .replace(/<CalloutBox[^>]*>/, `<div class="callout-box" data-icon="${icon}">`)
-          .replace('</CalloutBox>', '</div>');
+        node.type = 'text';
       }
     });
   };
@@ -19,9 +17,9 @@ const calloutBoxPlugin = () => {
 
 export async function markdownToHtml(markdown: string) {
   const result = await remark()
+    .use(preserveCalloutBox)
     .use(html, { sanitize: false }) // Allow HTML in markdown
     .use(gfm) // GitHub Flavored Markdown
-    .use(calloutBoxPlugin)
     .process(markdown);
   return result.toString();
 }
