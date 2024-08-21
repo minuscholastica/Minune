@@ -1,18 +1,20 @@
 ---
-title: '(Editing) On Building this Website'
+title: '(Draft) On Building this Website'
 subtitle: 'Shoutout to the Olickel'
 date: '21 August 2024'
 ---
 
-[TOC]
+## Before Reading: 
+
+This post comes in two parts. 
+
+First is my reflection on writing, and second is step-by-step of how this website was built. 
+
+Skip ahead to Building this Website part if that's what you're looking for! 
 
 ------
 
 ## Part 1: Slightly Long Preface 
-
-```
-Skip ahead to Building this Website part if that's what you're looking for! 
-```
 
 Here are a few on my wishlist.
 
@@ -64,9 +66,9 @@ Hrishi shares a lot of cool ideas, which I love hearing about. That got me think
 
 So I started writing for those around me, and shared as much as possible.
 
-That's the bit about overcoming writer's block.
+*That's the bit about overcoming writer's block.*
 
-Then, I decided to cross out the two items in my bucket list at once.
+With this, I decided to cross out the two items in my bucket list at once.
 
 Leveraging (again) one of my favorite blog posts, I decided to create a blog. It was pretty simple, just took a lot of time figuring out where and how to start.
 
@@ -89,7 +91,7 @@ I can read and modify code, but a total beginner in the world of building. I'm w
 
 Choose a preferred framework (e.g., Next.js, React, Vue.js). 
 
-I chose Next.js. Why?
+I chose Next.js. 
 
 ### (1) Set up your development environment
 
@@ -121,7 +123,7 @@ cd my-blog
 ```
 
 ```latex
-Useful terminal command #1:
+Useful terminal interjection #1:
 
 -"cd" to enter a folder.
 
@@ -160,7 +162,7 @@ That's it, you just got yourself a few toolkits.
 
 ### (3) Create blog structure
 
-I'm just going to assume your configuration looks like mine. 
+I will be assuming your configuration looks like mine. 
 
 With App Router option you chose above, your folders would look something like this:
 
@@ -206,20 +208,18 @@ my-blog/
 └── tsconfig.json
 ```
 
-
-
 ```latex
-*Useful terminal command #2*
+Useful terminal interjection #2
 
-*Delete the entire line:*
+Delete the entire line:
 
-- *On macOS and Linux: Press Ctrl + U*
-- *On Windows: Press Esc*
+- On macOS and Linux: Press Ctrl + U
+- On Windows: Press Esc
 
-*Clear the entire screen (this doesn't delete the input, but gives you a clean slate):*
+Clear the entire screen (this doesn't delete the input, but gives you a clean slate):
 
-- *On most systems: Type `clear` and press Enter*
-- *On Windows Command Prompt: Type `cls` and press Enter*
+- On most systems: Type `clear` and press Enter
+- On Windows Command Prompt: Type `cls` and press Enter
 ```
 
 ### (4) Add some content to the file
@@ -342,8 +342,8 @@ You probably want to just write, and have your website your content in without h
 #### 1. Create a directory for your blog posts. 
 
 ```latex
-*Useful terminal interjection #3:*
-*Run all commands in your root directory (In our case, "my-blog")* 
+Useful terminal interjection #3:
+Run all commands in your root directory (In our case, "my-blog")
 ```
 
 ```
@@ -402,7 +402,7 @@ touch app/lib/posts.ts
 Then, populate it with something like this:
 
 ```latex
-*Useful terminal interjection #4:*
+Useful terminal interjection #4:
 You can directly add content in the terminal by using a text editor like nano:
 
 nano app/lib/posts.ts
@@ -565,7 +565,7 @@ npm run dev
 ```
 
 ```latex
-*Useful terminal interjection #5:*
+Useful terminal interjection #5:
 
 If you want to exit development server, use these:
 
@@ -810,8 +810,11 @@ my-blog/
 
 That said, this is me getting pretty excited to write more, and stack it in this new blog.
 
+```
 Briefly on the name of the blog:
 
 Minu is obviously my name, Minune (미누네) in Korean is Minu's place.
 
 Very randomly, Minune in Romanian means wonderful, so there's that ;) 
+```
+
