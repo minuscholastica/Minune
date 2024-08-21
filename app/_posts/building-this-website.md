@@ -30,7 +30,7 @@ Here are a few on my wishlist.
 
 I had a few conversations on this with Hrishi, our titular (or in this case, sub-titular) character for this post (and maybe good to mention that his last name is Olickel), who has an awesome habit of writing and has been a rock in my writing attempts, or any projects in general. 
 
-<CalloutBox icon= "💡"> This is [his blog](https://olickel.com) by the way. Check it out! </CalloutBox>
+<CalloutBox> This is [his blog](https://olickel.com) by the way. Check it out! </CalloutBox>
 
 I often think the best way to learn anything is to learn from and observe someone who's been doing it for years. Hrishi's been writing in all the years I've known him, and I enjoyed reading them. 
 
@@ -52,7 +52,7 @@ What helped me climb out of my writer's block (where dreams go to die, just kidd
 
 You can record a meeting, or more usefully for me, yourself talking in your walks or runs, and then have Lumentis create your mumbo-jumbo ideas into a beautifully crafted documentation - I mean, ideas in aesthetic forms, who doesn't want that?
 
-<CalloutBox icon= "💡"> Here's [Lumentis](https://github.com/hrishioa/lumentis). Give it a go, I love it.  </CalloutBox>
+<CalloutBox> Here's [Lumentis](https://github.com/hrishioa/lumentis). Give it a go, I love it.  </CalloutBox>
 
 That actually made me overcome a big part of my writer's blog. 
 
@@ -100,21 +100,22 @@ I chose Next.js.
 
 So, make sure you have Node.js installed on your computer. You can download it from nodejs.org.
 
-> Open the terminal:
->
-> - On Windows: Press Win + R, type "cmd" and press Enter.
-> - On macOS: Press Cmd + Space, type "Terminal" and press Enter.
-> - On Linux: The method varies by distribution, but you can usually press Ctrl + Alt + T.
+<CalloutBox> Open the terminal:
+ - On Windows: Press Win + R, type "cmd" and press Enter.
+ - On macOS: Press Cmd + Space, type "Terminal" and press Enter.
+ - On Linux: The method varies by distribution, but you can usually press Ctrl + Alt + T. </CalloutBox> 
 
-> How to check if you have Node.js installed? (Maybe you don't remember):
->
-> ```
-> node --version
-> ```
->
-> If Node.js is installed, you'll see a version number displayed, like this: v18.16.0.
->
-> If it's not installed, an error message would pop up. In that case, you can ou can download and install it from the official Node.js website (https://nodejs.org/). The LTS (Long Term Support) version is recommended, apparently. Of course, to verify that the installation was successful, you can run the `node --version` command again.
+How to check if you have Node.js installed? (Maybe you don't remember):
+ ```
+ node --version
+ ```
+
+If Node.js is installed, you'll see a version number displayed, like this: v18.16.0.
+
+If it's not installed, an error message would pop up. In that case, you can 
+download and install it from the official Node.js website (https://nodejs.org/). 
+The LTS (Long Term Support) version is recommended, apparently. 
+Of course, to verify that the installation was successful, you can run the node --version command again.
 
 ### (2) Create a new Next.js project
 
@@ -125,7 +126,7 @@ npx create-next-app@latest my-blog
 cd my-blog
 ```
 
-```latex
+<CalloutBox> 
 Useful terminal interjection #1:
 
 -"cd" to enter a folder.
@@ -133,7 +134,7 @@ Useful terminal interjection #1:
 -"cd .." to exit and return to the parent folder.
 
 -"ls" to see what's inside the folder. 
-```
+</CalloutBox> 
 
 Then, it will ask you bunch of configuration questions.
 
@@ -211,7 +212,7 @@ my-blog/
 └── tsconfig.json
 ```
 
-```latex
+<CalloutBox> 
 Useful terminal interjection #2
 
 Delete the entire line:
@@ -223,7 +224,7 @@ Clear the entire screen (this doesn't delete the input, but gives you a clean sl
 
 - On most systems: Type `clear` and press Enter
 - On Windows Command Prompt: Type `cls` and press Enter
-```
+</CalloutBox> 
 
 ### (4) Add some content to the file
 
@@ -344,10 +345,10 @@ You probably want to just write, and have your website your content in without h
 
 #### 1. Create a directory for your blog posts. 
 
-```latex
+<CalloutBox> 
 Useful terminal interjection #3:
 Run all commands in your root directory (In our case, "my-blog")
-```
+</CalloutBox> 
 
 ```
 mkdir -p app/_posts
@@ -404,12 +405,12 @@ touch app/lib/posts.ts
 
 Then, populate it with something like this:
 
-```latex
+<CalloutBox> 
 Useful terminal interjection #4:
 You can directly add content in the terminal by using a text editor like nano:
 
 nano app/lib/posts.ts
-```
+</CalloutBox> 
 
 Anways, pouplate it, whether from the file opened from folder or the terminal: 
 
@@ -567,7 +568,7 @@ You can test it as you make changes by running this in your terminal:
 npm run dev
 ```
 
-```latex
+<CalloutBox> 
 Useful terminal interjection #5:
 
 If you want to exit development server, use these:
@@ -576,7 +577,7 @@ If you want to exit development server, use these:
 - On Windows/Linux: Press Ctrl + C
 
 When you exit, the blog won't be accessible at localhost:3000 until you start it again with `npm run dev`.
-```
+</CalloutBox> 
 
 Once it runs, open your browser and go to `http://localhost:3000`.
 
