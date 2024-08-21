@@ -3,14 +3,11 @@
 import React from 'react';
 
 interface CalloutBoxProps {
-  children?: React.ReactNode;
+  children: React.ReactNode;
   icon?: string;
-  dangerouslySetInnerHTML?: {
-    __html: string;
-  };
 }
 
-const CalloutBox: React.FC<CalloutBoxProps> = ({ children, icon, dangerouslySetInnerHTML }) => {
+const CalloutBox: React.FC<CalloutBoxProps> = ({ children, icon }) => {
   return (
     <div className="bg-[#e8f0fe] rounded-lg p-4 my-4 flex">
       {icon && (
@@ -18,9 +15,7 @@ const CalloutBox: React.FC<CalloutBoxProps> = ({ children, icon, dangerouslySetI
           <span className="text-2xl">{icon}</span>
         </div>
       )}
-      <div className="flex-grow" {...(dangerouslySetInnerHTML ? { dangerouslySetInnerHTML } : {})}>
-        {!dangerouslySetInnerHTML && children}
-      </div>
+      <div className="flex-grow">{children}</div>
     </div>
   );
 };

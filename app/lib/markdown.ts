@@ -1,25 +1,17 @@
 import { remark } from 'remark';
 import html from 'remark-html';
 import gfm from 'remark-gfm';
-import { Plugin } from 'unified';
-import { Node } from 'unist';
-import { visit } from 'unist-util-visit';
-
-const preserveCalloutBox: Plugin = () => {
-  return (tree: Node) => {
-    visit(tree, 'html', (node: any) => {
-      if (node.value.startsWith('<CalloutBox')) {
-        node.type = 'text';
-      }
-    });
-  };
-};
 
 export async function markdownToHtml(markdown: string) {
   const result = await remark()
-    .use(preserveCalloutBox)
-    .use(html, { sanitize: false }) // Allow HTML in markdown
-    .use(gfm) // GitHub Flavored Markdown
+    .use(html, { sanitize: false })
+    .use(gfm)
     .process(markdown);
-  return result.toString();
+  
+  // Preserve CalloutBox tags
+  let content = result.toString();
+  content = content.replace(/<p><CalloutBox/g, '<CalloutBox');
+  content = content.replace(/<\/CalloutBox><\/p>/g, '</CalloutBox>');
+  
+  return content;
 }
