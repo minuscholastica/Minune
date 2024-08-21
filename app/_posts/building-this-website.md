@@ -1,10 +1,12 @@
 ---
-title: 'On Building this Website'
+title: '(Editing) On Building this Website'
 subtitle: 'Shoutout to the Olickel'
 date: '21 August 2024'
 ---
 
-## Part 1: Slightly Long Preface
+[TOC]
+
+## Part 1: Slightly Long Preface 
 
 ```
 Skip ahead to Building this Website part if that's what you're looking for! 
@@ -12,22 +14,26 @@ Skip ahead to Building this Website part if that's what you're looking for!
 
 Here are a few on my wishlist.
 
-- I've always wanted to build a custom website. 
+- **I've always wanted to build a custom website.** 
 
-  Call me caught up with minor things (phrasing should be conciser here), but I wanted to create something that looked pretty to me to start with. I played around with a few platforms, but none gave me the satisfaction of wow, here's my playground to write as much as I want! 
+  Call me caught up in minute details, but I wanted to create something that looked pretty to me to start with. I played around with a few platforms, but none gave me the satisfaction of "wow, here's my playground to write as much as I want!"
 
-- I've always wanted to write more, and consistently. 
+- **I've always wanted to write more, and consistently.** 
 
-  Writing is hard. Writing regularly is harder. Once I grew out of the habit, it was really difficult to go back to it. 
+  Writing is hard. Writing regularly is harder. 
+  
+  Once I grew out of the habit, it was really difficult to go back to it. 
 
-I had a few conversations on this with Hrishi, our titular (or in this case, sub-titular character) who has an awesome habit of writing (and awesome in a lot of ways, most recently, I enjoyed our small chats about running at 160 bpm). 
+I had a few conversations on this with Hrishi, our titular (or in this case, sub-titular) character for this post, who has an awesome habit of writing (and awesome in a lot of ways, most recently, I enjoyed our small chats about running at 160 bpm). 
 
 > This is his blog by the way, check it out:
 > https://olickel.com/
 >
-> My current favorite is *"Workhorse models and racehorse models"*
+> My current favorite is 'Workhorse models and racehorse models'
 
-The point is, I think the best way to learn anything is to learn from someone who's been doing it for years. Hrishi's been writing in all the years I've known him, and I enjoyed reading every one of them. The cool thing about knowing the writer behind one of your favorite writings is you can get some good tips at random, say, while you're eating some good biryani together. 
+The point is, I think the best way to learn anything is to learn from someone who's been doing it for years. Hrishi's been writing in all the years I've known him, and I enjoyed reading every one of them. 
+
+The cool thing about knowing the writer behind one of your favorite writings is you can get some good tips at random, say, while you're eating some good biryani together. 
 
 Here are some I liked: 
 
@@ -37,20 +43,22 @@ This was the advice and instruction that I found quite useful (and have struggle
 
 *"Start one draft every three days (regardless of the completion of the previous one) and put down at least four bullet points per day, one draft or more."*
 
-But came a huge writer's block - what do I write about? How do I write about it? 
+But then, the inevitable writer’s block hit—what should I write about? How should I approach it?
 
-2. **Writing, basically just talking?**
+2. **Writing is basically just talking on paper, right?**
 
-Then, I chatted with him about one of his projects Lumentis. Lumentis is basically an application Hrishi built and it does a simple, but life-changing thing. You can record a meeting, or more usefully for me, yourself talking in your walks, and then have Lumentis create your mumbo-jumbo ideas into a beautifully crafted documentation - I mean, ideas in aesthetic forms, who doesn't want that?
+Then, I chatted with him about one of his projects Lumentis. Lumentis is basically an application Hrishi built and it does a simple, but life-changing thing. 
+
+You can record a meeting, or more usefully for me, yourself talking in your walks, and then have Lumentis create your mumbo-jumbo ideas into a beautifully crafted documentation - I mean, ideas in aesthetic forms, who doesn't want that?
 
 > Here's Lumentis: https://github.com/hrishioa/lumentis
-> Check it out, I love it. 
+> Give it a go, I love it. 
 
 That actually made me overcome a big part of my writer's blog. In a world where Lumentis exists, I'm basically writing every day, and I'm very chatty. It can't be that hard. 
 
-3. **Put it out there - for the hypes** 
+3. **Put it out there - for the hype**  
 
-Hrishi shares a lot of cool ideas, which I love hearing about. That got me thinking that I alraedy have my audience in friends, who do listen to my 3 hours of talking of most recently, how fascinating Dutch is as a language or how cool some House tracks I've discovered (Total eargasm, by the way.)
+Hrishi shares a lot of cool ideas, which I love hearing about. That got me thinking that I alraedy have my audience in friends, who do listen to my 3 hours of talking of most recently, how fascinating Dutch is as a language or how cool some House tracks I've discovered (Total ear-gasm, by the way.)
 
 So I started writing for those around me, and shared as much as possible.
 
@@ -111,40 +119,40 @@ cd my-blog
 ```
 
 ```latex
-*Useful terminal command #1:*
+Useful terminal command #1:
 
-*"cd" to enter a folder.*
+-"cd" to enter a folder.
 
-*"cd .." to exit*
+-"cd .." to exit and return to the parent folder.
 
-*"ls" to see what's inside the folder*
+-"ls" to see what's inside the folder. 
 ```
 
 Then, it will ask you bunch of configuration questions.
 
 ✔ **Would you like to use TypeScript?** … Yes, easier. 
 
-> It's a typed superset of JavaScript that helps catch errors early and improves code quality.
+It's a typed superset of JavaScript that helps catch errors early and improves code quality.
 
 ✔ **Would you like to use ESLint?** … Yes, easier too. 
 
-> It's a tool that identifies and reports on patterns in JavaScript, helping maintain code quality and consistency.
+It's a tool that identifies and reports on patterns in JavaScript, helping maintain code quality and consistency.
 
  ✔ **Would you like to use Tailwind CSS?** … Yes, I found it useful. 
 
->  It's a CSS framework that allows quick UI development with pre-built classes.
+It's a CSS framework that allows quick UI development with pre-built classes.
 
  ✔ **Would you like to use** `src/` **directory?** … I said no, but personal preference for how to structure folders.
 
-> It's an optional structure that places all your source code in a 'src' folder for better organization.
+It's an optional structure that places all your source code in a 'src' folder for better organization.
 
 ✔ **Would you like to use App Router? (recommended)** … Yes, routing feature is cool.
 
-> Next.js 13+ feature that provides a new file-system based router with enhanced features and improved performance.
+Next.js 13+ feature that provides a new file-system based router with enhanced features and improved performance.
 
 ✔ **Would you like to customize the default import alias (@/\*)?** … No, simply because I wanted minimal configuration effort, if not cruicial. 
 
-> A shortcut for importing modules, typically set to the root of your project for easier and cleaner imports.
+A shortcut for importing modules, typically set to the root of your project for easier and cleaner imports.
 
 That's it, you just got yourself a few toolkits.
 
