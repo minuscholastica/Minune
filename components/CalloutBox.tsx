@@ -15,7 +15,18 @@ const CalloutBox: React.FC<CalloutBoxProps> = ({ children, icon }) => {
           <span className="text-2xl">{icon}</span>
         </div>
       )}
-      <div className="flex-grow text-[#2d3748]">{children}</div>
+      <div className="flex-grow text-[#2d3748] callout-content">
+        {children}
+      </div>
+      <style jsx>{`
+        .callout-content :global(a) {
+          color: #2b6cb0;
+          text-decoration: underline;
+        }
+        .callout-content :global(a:hover) {
+          color: #2c5282;
+        }
+      `}</style>
     </div>
   );
 };
