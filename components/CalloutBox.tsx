@@ -4,27 +4,41 @@ import React from 'react';
 
 interface CalloutBoxProps {
   children: React.ReactNode;
-  icon?: string;
+  type?: 'note' | 'tip' | 'warning' | 'caution' | 'important';
+  heading?: string;
 }
 
-const CalloutBox: React.FC<CalloutBoxProps> = ({ children, icon }) => {
+const CalloutBox: React.FC<CalloutBoxProps> = ({ children, type = 'note', heading }) => {
+  const styles = {
+    note: 'bg-blue-100 border-blue-500 text-blue-800',
+    tip: 'bg-green-100 border-green-500 text-green-800',
+    warning: 'bg-yellow-100 border-yellow-500 text-yellow-800',
+    caution: 'bg-orange-100 border-orange-500 text-orange-800',
+    important: 'bg-red-100 border-red-500 text-red-800',
+  };
+
+  const icons = {
+    note: 'ℹ️',
+    tip: '💡',
+    warning: '⚠️',
+    caution: '🔔',
+    important: '❗',
+  };
+
   return (
-    <div className="bg-[#d0e3ff] rounded-lg p-4 my-4 flex items-start shadow-sm">
-      {icon && (
-        <div className="mr-4 text-[#4a5568]">
-          <span className="text-2xl">{icon}</span>
-        </div>
-      )}
-      <div className="flex-grow text-[#2d3748] callout-content">
-        {children}
+    <div className={`rounded-md p-4 my-4 border-l-4 ${styles[type]}`}>
+      <div className="flex items-center">
+        <span className="text-2xl mr-2">{icons[type]}</span>
+        {heading && <h3 className="font-bold">{heading}</h3>}
       </div>
+      <div className="mt-2">{children}</div>
       <style jsx>{`
-        .callout-content :global(a) {
-          color: #2b6cb0;
+        :global(a) {
+          color: currentColor;
           text-decoration: underline;
         }
-        .callout-content :global(a:hover) {
-          color: #2c5282;
+        :global(a:hover) {
+          opacity: 0.8;
         }
       `}</style>
     </div>

@@ -17,20 +17,20 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({ content }) => {
     let match;
 
     while ((match = regex.exec(content)) !== null) {
-      // Add the text before the match
       if (match.index > lastIndex) {
         parts.push(
           <div key={lastIndex} dangerouslySetInnerHTML={{ __html: content.slice(lastIndex, match.index) }} />
         );
       }
 
-      // Process the CalloutBox
       const calloutContent = match[1];
-      const iconMatch = match[0].match(/icon="([^"]*)"/);
-      const icon = iconMatch ? iconMatch[1] : '💡';
+      const typeMatch = match[0].match(/type="([^"]*)"/);
+      const headingMatch = match[0].match(/heading="([^"]*)"/);
+      const type = typeMatch ? typeMatch[1] : 'note';
+      const heading = headingMatch ? headingMatch[1] : undefined;
 
       parts.push(
-        <CalloutBox key={match.index} icon={icon}>
+        <CalloutBox key={match.index} type={type as any} heading={heading}>
           <div dangerouslySetInnerHTML={{ __html: calloutContent }} />
         </CalloutBox>
       );
@@ -38,7 +38,6 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({ content }) => {
       lastIndex = regex.lastIndex;
     }
 
-    // Add any remaining content after the last match
     if (lastIndex < content.length) {
       parts.push(
         <div key={lastIndex} dangerouslySetInnerHTML={{ __html: content.slice(lastIndex) }} />

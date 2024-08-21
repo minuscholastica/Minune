@@ -30,7 +30,7 @@ Here are a few on my wishlist.
 
 I had a few conversations on this with Hrishi, our titular (or in this case, sub-titular) character for this post (and maybe good to mention that his last name is Olickel), who has an awesome habit of writing and has been a rock in my writing attempts, or any projects in general. 
 
-<CalloutBox> This is [his blog](https://olickel.com) by the way. Check it out! </CalloutBox>
+<CalloutBox type="tip" heading="A Good Writing Reference"> This is [his blog](https://olickel.com) by the way. Check it out! </CalloutBox>
 
 I often think the best way to learn anything is to learn from and observe someone who's been doing it for years. Hrishi's been writing in all the years I've known him, and I enjoyed reading them. 
 
@@ -52,7 +52,7 @@ What helped me climb out of my writer's block (where dreams go to die, just kidd
 
 You can record a meeting, or more usefully for me, yourself talking in your walks or runs, and then have Lumentis create your mumbo-jumbo ideas into a beautifully crafted documentation - I mean, ideas in aesthetic forms, who doesn't want that?
 
-<CalloutBox> Here's [Lumentis](https://github.com/hrishioa/lumentis). Give it a go, I love it.  </CalloutBox>
+<CalloutBox type="tip" heading= "Another Cool Project"> Here's [Lumentis](https://github.com/hrishioa/lumentis). Give it a go, I love it.  </CalloutBox>
 
 That actually made me overcome a big part of my writer's blog. 
 
@@ -100,7 +100,7 @@ I chose Next.js.
 
 So, make sure you have Node.js installed on your computer. You can download it from nodejs.org.
 
-<CalloutBox> Open the terminal:
+<CalloutBox type="note" heading="Open the Terminal"> 
  - On Windows: Press Win + R, type "cmd" and press Enter.
  - On macOS: Press Cmd + Space, type "Terminal" and press Enter.
  - On Linux: The method varies by distribution, but you can usually press Ctrl + Alt + T. </CalloutBox> 
@@ -126,8 +126,7 @@ npx create-next-app@latest my-blog
 cd my-blog
 ```
 
-<CalloutBox> 
-Useful terminal interjection #1:
+<CalloutBox type="note" heading="Useful terminal interjection #1"> 
 
 -"cd" to enter a folder.
 
@@ -212,8 +211,7 @@ my-blog/
 └── tsconfig.json
 ```
 
-<CalloutBox> 
-Useful terminal interjection #2
+<CalloutBox type="note" heading="Useful terminal interjection #2"> 
 
 Delete the entire line:
 
@@ -345,8 +343,7 @@ You probably want to just write, and have your website your content in without h
 
 #### 1. Create a directory for your blog posts. 
 
-<CalloutBox> 
-Useful terminal interjection #3:
+<CalloutBox type="note" heading="Useful terminal interjection #3"> 
 Run all commands in your root directory (In our case, "my-blog")
 </CalloutBox> 
 
@@ -405,8 +402,7 @@ touch app/lib/posts.ts
 
 Then, populate it with something like this:
 
-<CalloutBox> 
-Useful terminal interjection #4:
+<CalloutBox type="note" heading="Useful terminal interjection #4"> 
 You can directly add content in the terminal by using a text editor like nano:
 
 nano app/lib/posts.ts
@@ -568,8 +564,7 @@ You can test it as you make changes by running this in your terminal:
 npm run dev
 ```
 
-<CalloutBox> 
-Useful terminal interjection #5:
+<CalloutBox type="note" heading="Useful terminal interjection #5"> 
 
 If you want to exit development server, use these:
 
@@ -814,11 +809,11 @@ my-blog/
 
 That said, this is me getting pretty excited to write more, and stack it in this new blog.
 
-```
+<CalloutBox type="tip" heading="Briefly on the Name of the Blog"> 
 Briefly on the name of the blog, if anyone's interested: 
 
 Minu is obviously my name, Minune (미누네) in Korean is Minu's place.
 
 Very randomly, Minune in Romanian means wonderful, so there's that ;) 
-```
+</CalloutBox> 
 
