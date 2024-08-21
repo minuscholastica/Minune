@@ -1,6 +1,6 @@
 ---
 title: 'Automating ISO 13485'
-date: '2024-08-20'
+date: '20 August 2024'
 ---
 
 **ISO 13485 compliance can be a single Notion page.**

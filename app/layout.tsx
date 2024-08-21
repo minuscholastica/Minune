@@ -20,9 +20,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <ClientLayout>
-          <div className="mt-12 mb-8">
-            <h1 className="text-4xl font-bold text-center">Untimely Meditations at Minune</h1>
-          </div>
           {children}
         </ClientLayout>
       </body>

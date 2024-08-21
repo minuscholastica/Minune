@@ -1,6 +1,6 @@
 ---
 title: 'On Building this Website'
-date: '2024-08-21'
+date: '21 August 2024'
 ---
 
 I've always wanted to build a custom website, free from any hosting platform. Here's a really simple way of doing it with my snippets of code:

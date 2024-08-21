@@ -5,8 +5,7 @@ export default function Home() {
   const posts = getSortedPostsData()
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold mb-4">Untimely Meditations at Minune</h1>
+    <div className="mt-8">
       <PostList posts={posts} />
     </div>
   )
