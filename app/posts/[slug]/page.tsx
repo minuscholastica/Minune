@@ -6,7 +6,8 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { PostData } from '../../lib/posts';
 import Image from 'next/image';
-import { FaTwitter, FaGithub } from 'react-icons/fa';
+import Link from 'next/link';
+import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Post({ params }: { params: { slug: string } }) {
   const fullPath = path.join(process.cwd(), 'app/_posts', `${params.slug}.md`);
@@ -21,7 +22,7 @@ export default function Post({ params }: { params: { slug: string } }) {
         <p className="text-xl text-gray-500 mb-4">{postData.subtitle}</p>
       )}
       
-      {/* Divider */}
+      {/* Top Divider */}
       <hr className="my-8 border-t border-gray-300 dark:border-gray-700" />
 
       <div className="prose prose-lg dark:prose-invert max-w-none">
@@ -43,28 +44,35 @@ export default function Post({ params }: { params: { slug: string } }) {
         </ReactMarkdown>
       </div>
 
-      {/* Author section */}
-      <div className="mt-12 pt-8 border-t border-gray-300 dark:border-gray-700 flex items-center justify-between">
-        <div className="flex items-center">
-          <Image 
-            src="/Minu2.jpeg"  // Make sure this path is correct
-            alt="Author"
-            width={60}
-            height={60}
-            className="rounded-full mr-4"
-          />
-          <div>
-            <h3 className="font-bold">Minu Choi</h3>
-            <p className="text-gray-500 text-sm">{postData.date}</p>
+      {/* Author section with top and bottom dividers */}
+      <div className="mt-12 py-8 border-t border-b border-gray-300 dark:border-gray-700">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center">
+            <Link href="/" className="mr-4">
+              <Image 
+                src="/Minu2.jpeg"  // Make sure this path is correct
+                alt="Author"
+                width={60}
+                height={60}
+                className="rounded-full cursor-pointer"
+              />
+            </Link>
+            <div>
+              <h3 className="font-bold">Minu Choi</h3>
+              <p className="text-gray-500 text-sm">{postData.date}</p>
+            </div>
           </div>
-        </div>
-        <div className="flex space-x-4">
-          <a href="https://twitter.com/minune29" target="_blank" rel="noopener noreferrer">
-            <FaTwitter size={24} className="text-gray-600 hover:text-blue-400" />
-          </a>
-          <a href="https://github.com/minuscholastica" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={24} className="text-gray-600 hover:text-gray-900" />
-          </a>
+          <div className="flex space-x-4">
+            <a href="https://www.linkedin.com/in/minu-choi-2aa642211" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size={24} className="text-gray-600 hover:text-blue-600" />
+            </a>
+            <a href="https://twitter.com/minune29" target="_blank" rel="noopener noreferrer">
+              <FaTwitter size={24} className="text-gray-600 hover:text-blue-400" />
+            </a>
+            <a href="https://github.com/minuscholastica" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={24} className="text-gray-600 hover:text-gray-900" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
