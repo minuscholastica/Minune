@@ -78,4 +78,4 @@ const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => 
   )
 }
 
-export default ClientLayouta
+export default ClientLayout;
