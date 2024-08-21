@@ -30,7 +30,6 @@ Here are a few on my wishlist.
 
 I had a few conversations on this with Hrishi, our titular (or in this case, sub-titular) character for this post, who has an awesome habit of writing and has been a rock in my writing attempts, or any projects in general. 
 
-> [!TIP]
 > This is his blog by the way, check it out: https://olickel.com/
 > My current favorite is 'Workhorse models and racehorse models'
 
@@ -54,7 +53,6 @@ This really hit me hard when Hrishi was telling me about his projects Lumentis. 
 
 You can record a meeting, or more usefully for me, yourself talking in your walks, and then have Lumentis create your mumbo-jumbo ideas into a beautifully crafted documentation - I mean, ideas in aesthetic forms, who doesn't want that?
 
-> [!TIP]
 > Here's Lumentis: https://github.com/hrishioa/lumentis
 > Give it a go, I love it. 
 
