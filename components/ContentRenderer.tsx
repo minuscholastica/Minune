@@ -24,13 +24,11 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({ content }) => {
       }
 
       const calloutContent = match[1];
-      const typeMatch = match[0].match(/type="([^"]*)"/);
       const headingMatch = match[0].match(/heading="([^"]*)"/);
-      const type = typeMatch ? typeMatch[1] : 'note';
       const heading = headingMatch ? headingMatch[1] : undefined;
 
       parts.push(
-        <CalloutBox key={match.index} type={type as any} heading={heading}>
+        <CalloutBox key={match.index} heading={heading}>
           <div dangerouslySetInnerHTML={{ __html: calloutContent }} />
         </CalloutBox>
       );
