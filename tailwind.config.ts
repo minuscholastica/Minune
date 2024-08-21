@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'dark-navy': '#002147',
+        'dark-navy': '#1e3a8a',
       },
       backgroundColor: {
         light: '#ffffff',
