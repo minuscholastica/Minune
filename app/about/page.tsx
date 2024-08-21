@@ -19,7 +19,7 @@ export default function About() {
       
       <div className="space-y-4">
         <p>
-          These days, I solve a chicken-and-egg problem: using AI to transform how we handle data, which is essential to better use of AI. On the side, I enjoy crafting narratives that makes complex tech accessible.
+          These days, I think about a chicken-and-egg problem while engaging with a cool startup: using AI to transform how we handle data, which is essential to better use of AI. On the side, I enjoy crafting narratives that makes complex tech accessible.
         </p>
         
         <p>

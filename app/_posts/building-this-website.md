@@ -28,41 +28,41 @@ Here are a few on my wishlist.
   
   Once I grew out of the habit, it was really difficult to go back to it. 
 
-I had a few conversations on this with Hrishi, our titular (or in this case, sub-titular) character for this post, who has an awesome habit of writing (and awesome in a lot of ways, most recently, I enjoyed our small chats about running at 160 bpm). 
+I had a few conversations on this with Hrishi, our titular (or in this case, sub-titular) character for this post, who has an awesome habit of writing and has been a rock in my writing attempts, or any projects in general. 
 
-> This is his blog by the way, check it out:
-> https://olickel.com/
+> **_NOTE:_** This is his blog by the way, check it out: https://olickel.com/
 >
 > My current favorite is 'Workhorse models and racehorse models'
 
-The point is, I think the best way to learn anything is to learn from someone who's been doing it for years. Hrishi's been writing in all the years I've known him, and I enjoyed reading every one of them. 
+The point is, I think the best way to learn anything is to learn from someone who's been doing it for years. Hrishi's been writing in all the years I've known him, and I enjoyed reading them. 
 
 The cool thing about knowing the writer behind one of your favorite writings is you can get some good tips at random, say, while you're eating some good biryani together. 
 
-Here are some I liked: 
+Here are some that stuck with me over time: 
 
 1. **Just write.** 
 
-This was the advice and instruction that I found quite useful (and have struggled with for quite a while): 
+This was a piece of advice and instruction that I found quite useful (and have struggled with for quite a while): 
 
 *"Start one draft every three days (regardless of the completion of the previous one) and put down at least four bullet points per day, one draft or more."*
 
 But then, the inevitable writer’s block hit—what should I write about? How should I approach it?
 
-2. **Writing is basically just talking on paper, right?**
+2. **Writing is basically just talking on paper, almost.**
 
-Then, I chatted with him about one of his projects Lumentis. Lumentis is basically an application Hrishi built and it does a simple, but life-changing thing. 
+This really hit me hard when Hrishi was telling me about his projects Lumentis. Lumentis is basically an application Hrishi built and it does a simple, but life-changing thing. 
 
 You can record a meeting, or more usefully for me, yourself talking in your walks, and then have Lumentis create your mumbo-jumbo ideas into a beautifully crafted documentation - I mean, ideas in aesthetic forms, who doesn't want that?
 
-> Here's Lumentis: https://github.com/hrishioa/lumentis
+> **_NOTE:_** Here's Lumentis: https://github.com/hrishioa/lumentis
+>
 > Give it a go, I love it. 
 
 That actually made me overcome a big part of my writer's blog. In a world where Lumentis exists, I'm basically writing every day, and I'm very chatty. It can't be that hard. 
 
 3. **Put it out there - for the hype**  
 
-Hrishi shares a lot of cool ideas, which I love hearing about. That got me thinking that I alraedy have my audience in friends, who do listen to my 3 hours of talking of most recently, how fascinating Dutch is as a language or how cool some House tracks I've discovered (Total ear-gasm, by the way.)
+Hrishi shares a lot of cool ideas, which I love hearing about. That got me thinking that I alraedy have my audience in friends, who do listen to my 3 hours of talking of most recently, how fascinating Dutch is as a language or how cool some House tracks I've discovered. 
 
 So I started writing for those around me, and shared as much as possible.
 
@@ -134,27 +134,27 @@ Useful terminal interjection #1:
 
 Then, it will ask you bunch of configuration questions.
 
-✔ **Would you like to use TypeScript?** … Yes, easier. 
+✔ *Would you like to use TypeScript?* … Yes, easier. 
 
 It's a typed superset of JavaScript that helps catch errors early and improves code quality.
 
-✔ **Would you like to use ESLint?** … Yes, easier too. 
+✔ *Would you like to use ESLint?* … Yes, easier too. 
 
 It's a tool that identifies and reports on patterns in JavaScript, helping maintain code quality and consistency.
 
- ✔ **Would you like to use Tailwind CSS?** … Yes, I found it useful. 
+ ✔ *Would you like to use Tailwind CSS?* … Yes, I found it useful. 
 
 It's a CSS framework that allows quick UI development with pre-built classes.
 
- ✔ **Would you like to use** `src/` **directory?** … I said no, but personal preference for how to structure folders.
+ ✔ *Would you like to use** `src/` **directory?* … I said no, but personal preference for how to structure folders.
 
 It's an optional structure that places all your source code in a 'src' folder for better organization.
 
-✔ **Would you like to use App Router? (recommended)** … Yes, routing feature is cool.
+✔ *Would you like to use App Router? (recommended)* … Yes, routing feature is cool.
 
 Next.js 13+ feature that provides a new file-system based router with enhanced features and improved performance.
 
-✔ **Would you like to customize the default import alias (@/\*)?** … No, simply because I wanted minimal configuration effort, if not cruicial. 
+✔ *Would you like to customize the default import alias (@/\*)?* … No, simply because I wanted minimal configuration effort, if not cruicial. 
 
 A shortcut for importing modules, typically set to the root of your project for easier and cleaner imports.
 
