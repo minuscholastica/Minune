@@ -8,7 +8,7 @@ date: '21 August 2024'
 
 This post comes in two parts. 
 
-First is my reflection on writing, and second is step-by-step of how this website was built. 
+First is my latest thoughts on writing, mostly in conversations with a particular human being, and second is step-by-step of how this website was built. 
 
 Skip ahead to Building this Website part if that's what you're looking for! 
 
@@ -20,24 +20,25 @@ Here are a few on my wishlist.
 
 - **I've always wanted to build a custom website.** 
 
-  Call me caught up in minute details, but I wanted to create something that looked pretty to me to start with. I played around with a few platforms, but none gave me the satisfaction of "wow, here's my playground to write as much as I want!"
+  Call me caught up in minute details, but I wanted to create something that looked pretty to me to start with. I played around with a few platforms, but none gave me the satisfaction of "wow, here's a playground I want to frequent!"
 
 - **I've always wanted to write more, and consistently.** 
 
-  Writing is hard. Writing regularly is harder. 
+  Writing is hard. Writing regularly is harder. Writing to satisfaction is the hardest. 
   
-  Once I grew out of the habit, it was really difficult to go back to it. 
+  Once I grew out of the habit of writing, because you know life happens, it was really difficult to go back to it. 
 
-I had a few conversations on this with Hrishi, our titular (or in this case, sub-titular) character for this post, who has an awesome habit of writing and has been a rock in my writing attempts, or any projects in general. 
+I had a few conversations on this with Hrishi, our titular (or in this case, sub-titular) character for this post (and maybe good to mention that his last name is Olickel), who has an awesome habit of writing and has been a rock in my writing attempts, or any projects in general. 
 
 > This is his blog by the way, check it out: https://olickel.com/
+>
 > My current favorite is 'Workhorse models and racehorse models'
 
-The point is, I think the best way to learn anything is to learn from someone who's been doing it for years. Hrishi's been writing in all the years I've known him, and I enjoyed reading them. 
+I often think the best way to learn anything is to learn from and observe someone who's been doing it for years. Hrishi's been writing in all the years I've known him, and I enjoyed reading them. 
 
-The cool thing about knowing the writer behind one of your favorite writings is you can get some good tips at random, say, while you're eating some good biryani together. 
+And the cool thing about knowing the writer behind one of your favorite writings is you can get some good tips at random, say, while you're eating some good biryani together. 
 
-Here are some that stuck with me over time: 
+Here are some that stuck with me over time, some over good meals and some over my random call for help: 
 
 1. **Just write.** 
 
@@ -45,30 +46,30 @@ This was a piece of advice and instruction that I found quite useful (and have s
 
 *"Start one draft every three days (regardless of the completion of the previous one) and put down at least four bullet points per day, one draft or more."*
 
-But then, the inevitable writer’s block hit—what should I write about? How should I approach it?
+It made a lot of sense, from the very beginning. But then, the inevitable writer’s block hit—what should I write about? How should I write about it? Do I know enough? 
 
 2. **Writing is basically just talking on paper, almost.**
 
-This really hit me hard when Hrishi was telling me about his projects Lumentis. Lumentis is basically an application Hrishi built and it does a simple, but life-changing thing. 
+What helped me climb out of my writer's block (where dreams go to die, just kidding.) actually came from hearing about Hrishi's project Lumentis. Lumentis is an application Hrishi built and it does a simple, but life-changing thing. 
 
-You can record a meeting, or more usefully for me, yourself talking in your walks, and then have Lumentis create your mumbo-jumbo ideas into a beautifully crafted documentation - I mean, ideas in aesthetic forms, who doesn't want that?
+You can record a meeting, or more usefully for me, yourself talking in your walks or runs, and then have Lumentis create your mumbo-jumbo ideas into a beautifully crafted documentation - I mean, ideas in aesthetic forms, who doesn't want that?
 
 > Here's Lumentis: https://github.com/hrishioa/lumentis
 > Give it a go, I love it. 
 
-That actually made me overcome a big part of my writer's blog. In a world where Lumentis exists, I'm basically writing every day, and I'm very chatty. It can't be that hard. 
+That actually made me overcome a big part of my writer's blog. 
+
+In a world where Lumentis exists, I'm basically writing every day. It can't be that hard. 
 
 3. **Put it out there - for the hype**  
 
-Hrishi shares a lot of cool ideas, which I love hearing about. That got me thinking that I alraedy have my audience in friends, who do listen to my 3 hours of talking of most recently, how fascinating Dutch is as a language or how cool some House tracks I've discovered. 
+Sharing what I wrote really helped, no matter what stage it's at. I larely felt reluctant to put out a raw form of thoughts out there for world to see. To have someone read what I wrote, and encourage me to put it out there, whether it be a simple linkedin post or a shared Notion page where you know you have an audience, really hyped up writing for me. It also helped to feel that there are people who want to write, and potentially, an entire community of friends ping-poing with their fascinating thoughts. 
 
-So I started writing for those around me, and shared as much as possible.
+This gave me a great headspace to write more aggressively, which brought me back to my long-awaited items in the bucket list. It felt like a good opportunity to cross out the two items in my bucket list at once
 
-*That's the bit about overcoming writer's block.*
+Leveraging one of my favorite blog posts, I decided to create a blog. 
 
-With this, I decided to cross out the two items in my bucket list at once.
-
-Leveraging (again) one of my favorite blog posts, I decided to create a blog. It was pretty simple, just took a lot of time figuring out where and how to start.
+It was overall pretty simple, just took a lot of time figuring out where and how to start.
 
 This is why I decided to write this, for those out there who has never built a website, but like the aesthetics of this one, and want to build it yourself.
 
