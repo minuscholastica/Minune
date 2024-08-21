@@ -9,7 +9,7 @@ We just received ours at Nervotec, my ex-workplace. 🎉
 
 As the project lead, I was excited to hear the news just days before moving on to my new chapter.
 
-<!--*For those unfamiliar, ISO 13485 is the regulatory standard for Medical Device quality management systems. It's almost a prerequisite for startups in healthcare, often determining market entry, but can be a beast of a certification.*-->
+<CalloutBox> For those unfamiliar, ISO 13485 is the regulatory standard for Medical Device quality management systems. It's almost a prerequisite for startups in healthcare, often determining market entry, but can be a beast of a certification. </CalloutBox>
 
 How beastly are we talking? 
 
