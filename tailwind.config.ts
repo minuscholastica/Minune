@@ -9,11 +9,17 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
-      // You can keep your custom colors here if needed
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: 'none',
+          },
+        },
+      },
     },
   },
   plugins: [
-    // Remove @tailwindcss/typography if you're not using it
+    require('@tailwindcss/typography'),
   ],
 }
 
