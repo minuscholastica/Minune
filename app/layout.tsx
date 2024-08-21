@@ -20,7 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <ClientLayout>
-          {children}
+          <main className="prose prose-slate dark:prose-invert max-w-none">
+            {children}
+          </main>
         </ClientLayout>
       </body>
     </html>

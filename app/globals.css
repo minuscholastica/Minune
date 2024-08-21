@@ -28,3 +28,11 @@ body {
 .callout-warning {
   @apply p-4 my-4 bg-yellow-100 border-l-4 border-yellow-500;
 }
+
+.callout {
+  @apply text-base font-normal;
+}
+
+.callout p {
+  @apply mb-2 last:mb-0;
+}
