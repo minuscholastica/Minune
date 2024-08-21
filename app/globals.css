@@ -7,3 +7,25 @@
     @apply p-4 my-4 bg-blue-100 border-l-4 border-blue-500 dark:bg-blue-900 dark:border-blue-400 dark:text-blue-100;
   }
 }
+
+
+.blog-content {
+  @apply text-base;
+}
+
+.blog-content .prose {
+  max-width: none;
+}
+
+.blog-content .prose a {
+  @apply text-blue-600 underline;
+}
+
+.blog-content .prose h1,
+.blog-content .prose h2,
+.blog-content .prose h3,
+.blog-content .prose h4,
+.blog-content .prose h5,
+.blog-content .prose h6 {
+  @apply text-black dark:text-white;
+}

@@ -9,12 +9,12 @@ interface CalloutBoxProps {
 
 const CalloutBox: React.FC<CalloutBoxProps> = ({ children, heading }) => {
   return (
-    <div className="bg-[#e6f3ff] border-l-4 border-[#2a52be] rounded-r-md p-4 my-6">
-      <div className="flex items-center mb-2">
-        <span className="text-2xl mr-3">💡</span>
-        {heading && <h3 className="font-bold text-[#2a52be] text-lg">{heading}</h3>}
+    <div className="bg-[#e6f3ff] border-l-4 border-[#2a52be] rounded-r-md p-3 my-4 text-sm">
+      <div className="flex items-center mb-1">
+        <span className="text-xl mr-2">💡</span>
+        {heading && <h4 className="font-semibold text-[#2a52be]">{heading}</h4>}
       </div>
-      <div className="text-[#333333] ml-9">{children}</div>
+      <div className="text-black ml-7">{children}</div>
       <style jsx>{`
         :global(a) {
           color: #2a52be;
