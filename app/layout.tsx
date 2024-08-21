@@ -18,11 +18,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
       </head>
-      <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+      <body>
         <ClientLayout>
-          <main className="prose prose-gray dark:prose-invert max-w-none">
-            {children}
-          </main>
+          {children}
         </ClientLayout>
       </body>
     </html>

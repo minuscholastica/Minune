@@ -7,30 +7,31 @@ import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 
 const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [isLightMode, setIsLightMode] = useState(false);
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    setTheme(storedTheme || (prefersDark ? 'dark' : 'light'));
+    const storedTheme = localStorage.getItem('theme');
+    setIsLightMode(storedTheme === 'light');
   }, []);
 
   useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
+    if (isLightMode) {
+      document.documentElement.classList.add('light');
       document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
+      localStorage.setItem('theme', 'dark');
     }
-    localStorage.setItem('theme', theme);
-  }, [theme]);
+  }, [isLightMode]);
 
   const toggleTheme = () => {
-    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+    setIsLightMode(prev => !prev);
   };
 
   return (
-    <div className={`min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`}>
+    <div className={`min-h-screen bg-light dark:bg-dark text-light dark:text-dark`}>
       <div className="max-w-4xl mx-auto px-4">
         <header className="py-6 flex justify-between items-center">
           <Link href="/" className="flex items-center">
@@ -44,25 +45,25 @@ const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => 
           </Link>
           <div className="flex flex-col items-center">
             <h1 className="text-3xl font-bold">Minune</h1>
-            <Link href="/about" className="text-sm mt-1 hover:text-gray-500 dark:hover:text-gray-400">About me</Link>
+            <Link href="/about" className="text-sm mt-1 hover:text-gray-500">About me</Link>
           </div>
           <div className="flex items-center space-x-6">
             <Link href="https://www.linkedin.com/in/minu-choi-2aa642211" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin size={20} className="text-gray-900 dark:text-gray-100" />
+              <FaLinkedin size={20} className="text-light dark:text-dark" />
             </Link>
             <Link href="https://twitter.com/minune29" target="_blank" rel="noopener noreferrer">
-              <FaTwitter size={20} className="text-gray-900 dark:text-gray-100" />
+              <FaTwitter size={20} className="text-light dark:text-dark" />
             </Link>
             <Link href="https://github.com/minuscholastica" target="_blank" rel="noopener noreferrer">
-              <FaGithub size={20} className="text-gray-900 dark:text-gray-100" />
+              <FaGithub size={20} className="text-light dark:text-dark" />
             </Link>
-            <button onClick={toggleTheme} aria-label="Toggle theme" className="p-2 rounded-full bg-gray-200 dark:bg-gray-700">
-              {theme === 'light' ? <BsMoonFill size={20} className="text-gray-900" /> : <BsSunFill size={20} className="text-yellow-400" />}
+            <button onClick={toggleTheme} aria-label="Toggle light mode" className="p-2 rounded-full bg-gray-200 dark:bg-gray-700">
+              {isLightMode ? <BsMoonFill size={20} className="text-dark-navy" /> : <BsSunFill size={20} className="text-yellow-100" />}
             </button>
           </div>
         </header>
         <main className="mt-8">{children}</main>
-        <footer className="py-4 mt-8 text-center text-gray-500 dark:text-gray-400 flex flex-col items-center">
+        <footer className="py-4 mt-8 text-center text-gray-500 flex flex-col items-center">
           <Image 
             src="/favicon.png" 
             alt="Favicon" 

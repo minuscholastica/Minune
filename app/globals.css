@@ -2,58 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --foreground-rgb: 26, 32, 44;
-    --background-rgb: 255, 255, 255;
-  }
-
-  .dark {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 26, 32, 44;
-  }
-
-  body {
-    @apply text-gray-900 bg-white;
-    color: rgb(var(--foreground-rgb));
-    background: rgb(var(--background-rgb));
-  }
-
-  .dark body {
-    @apply text-gray-100 bg-gray-900;
-  }
+:root {
+  --foreground-rgb: 26, 32, 44;
+  --background-rgb: 255, 255, 255;
 }
 
-@layer components {
-  .callout-note {
-    @apply p-4 my-4 bg-blue-100 border-l-4 border-blue-500 text-blue-900;
-  }
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 26, 32, 44;
+}
 
-  .callout-tip {
-    @apply p-4 my-4 bg-green-100 border-l-4 border-green-500 text-green-900;
-  }
-
-  .callout-warning {
-    @apply p-4 my-4 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-900;
-  }
-
-  .callout {
-    @apply text-base font-normal;
-  }
-
-  .callout p {
-    @apply mb-2 last:mb-0;
-  }
-
-  .dark .callout-note {
-    @apply bg-blue-900 border-blue-500 text-blue-100;
-  }
-
-  .dark .callout-tip {
-    @apply bg-green-900 border-green-500 text-green-100;
-  }
-
-  .dark .callout-warning {
-    @apply bg-yellow-900 border-yellow-500 text-yellow-100;
-  }
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
 }
