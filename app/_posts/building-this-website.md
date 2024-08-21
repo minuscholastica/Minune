@@ -30,7 +30,7 @@ Here are a few on my wishlist.
 
 I had a few conversations on this with Hrishi, our titular (or in this case, sub-titular) character for this post (and maybe good to mention that his last name is Olickel), who has an awesome habit of writing and has been a rock in my writing attempts, or any projects in general. 
 
-<CalloutBox icon= "💡"> This is his blog by the way. Check it out: https://olickel.com/">https://olickel.com/. </CalloutBox>
+<CalloutBox icon= "💡"> This is his blog by the way. Check it out: https://olickel.com </CalloutBox>
 
 I often think the best way to learn anything is to learn from and observe someone who's been doing it for years. Hrishi's been writing in all the years I've known him, and I enjoyed reading them. 
 
