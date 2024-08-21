@@ -63,15 +63,19 @@ In a world where Lumentis exists, I'm basically writing every day. It can't be t
 
 3. **Put it out there - for the hype**  
 
-Sharing what I wrote really helped, no matter what stage it's at. I larely felt reluctant to put out a raw form of thoughts out there for world to see. To have someone read what I wrote, and encourage me to put it out there, whether it be a simple linkedin post or a shared Notion page where you know you have an audience, really hyped up writing for me. It also helped to feel that there are people who want to write, and potentially, an entire community of friends ping-poing with their fascinating thoughts. 
+Sharing what I wrote really helped, no matter what stage it's at. I largely felt reluctant to put out a raw form of thoughts out there for world to see. 
 
-This gave me a great headspace to write more aggressively, which brought me back to my long-awaited items in the bucket list. It felt like a good opportunity to cross out the two items in my bucket list at once
+To have someone read what I wrote, and encourage me to put it out there, whether it be a simple linkedin post or a shared Notion page where you know you have an audience, really hyped up writing for me.
+
+ It also helped to feel the excitement that there are people who want to write, and potentially, an entire community of friends ping-pong-ing with their fascinating thoughts.  
+
+This gave me a great headspace to write more aggressively, which brought me back to my long-awaited items in the bucket list. It felt like a good opportunity to cross out the two items in my bucket list at once. 
 
 Leveraging one of my favorite blog posts, I decided to create a blog. 
 
 It was overall pretty simple, just took a lot of time figuring out where and how to start.
 
-This is why I decided to write this, for those out there who has never built a website, but like the aesthetics of this one, and want to build it yourself.
+This is why I decided to write this particular post, for those out there who has never built a website, but like the aesthetics of this one, and want to build it yourself.
 
 ------
 
