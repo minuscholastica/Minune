@@ -786,7 +786,7 @@ npx vercel —prod
 
 ## Part 3: Quick Wrapup
 
-I wrote this because I wanted to remember what confused the first time.
+I wrote this because I wanted to remember what confused me the first time. 
 
 Claude as always is really helpful, ask it for any funky behaviours! 
 
@@ -813,7 +813,7 @@ my-blog/
 That said, this is me getting pretty excited to write more, and stack it in this new blog.
 
 ```
-Briefly on the name of the blog:
+Briefly on the name of the blog, if anyone's interested: 
 
 Minu is obviously my name, Minune (미누네) in Korean is Minu's place.
 
