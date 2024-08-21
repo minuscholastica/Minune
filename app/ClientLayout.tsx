@@ -58,7 +58,7 @@ const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => 
               <FaGithub size={20} className="text-light dark:text-dark" />
             </Link>
             <button onClick={toggleTheme} aria-label="Toggle light mode" className="p-2 rounded-full bg-gray-200 dark:bg-gray-700">
-              {isLightMode ? <BsMoonFill size={20} className="text-dark-navy" /> : <BsSunFill size={20} className="text-yellow-400" />}
+              {isLightMode ? <BsMoonFill size={20} className="text-dark-navy" /> : <BsSunFill size={20} className="text-yellow-100" />}
             </button>
           </div>
         </header>
