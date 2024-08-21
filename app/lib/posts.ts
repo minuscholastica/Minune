@@ -21,7 +21,7 @@ export function getSortedPostsData() {
     // Combine the data with the id
     return {
       id,
-      ...(matterResult.data as { date: string; title: string })
+      ...(matterResult.data as { date: string; title: string; subtitle?: string })
     }
   })
   // Sort posts by date
@@ -32,4 +32,12 @@ export function getSortedPostsData() {
       return -1
     }
   })
+}
+
+// You can add a type definition for the post data
+export type PostData = {
+  id: string;
+  date: string;
+  title: string;
+  subtitle?: string;
 }

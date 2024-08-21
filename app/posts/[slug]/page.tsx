@@ -4,16 +4,21 @@ import path from 'path';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { PostData } from '../../lib/posts';  // Updated import path
 
 export default function Post({ params }: { params: { slug: string } }) {
   const fullPath = path.join(process.cwd(), 'app/_posts', `${params.slug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
+  const postData = data as PostData;
 
   return (
     <div className="mt-8">
-      <h1 className="text-3xl font-bold mb-4">{data.title}</h1>
-      <p className="text-gray-500 mb-4">{data.date}</p>
+      <h1 className="text-3xl font-bold mb-2">{postData.title}</h1>
+      {postData.subtitle && (
+        <p className="text-xl text-gray-500 mb-4">{postData.subtitle}</p>
+      )}
+      <p className="text-gray-400 text-sm mb-8">{postData.date}</p>
       <div className="prose prose-lg dark:prose-invert max-w-none">
         <ReactMarkdown 
           remarkPlugins={[remarkGfm]}

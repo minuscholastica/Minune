@@ -1,5 +1,6 @@
 ---
 title: 'Automating ISO 13485'
+subtitle: 'How I built one of the first Notion-based automated QMS'
 date: '20 August 2024'
 ---
 
