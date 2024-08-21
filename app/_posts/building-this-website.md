@@ -6,6 +6,8 @@ date: '21 August 2024'
 
 [TOC]
 
+------
+
 ## Part 1: Slightly Long Preface 
 
 ```
@@ -756,7 +758,7 @@ npm run build
 
 It will tell you what's up. Sort that out, and then run `npx vercel` again. 
 
-#### 4. Deployed!  
+### 4. Deployed!  
 
 If no issue, you would have successfully deployed! 
 
@@ -778,7 +780,9 @@ git push
 npx vercel —prod
 ```
 
-# Quick Wrapup
+------
+
+## Part 3: Quick Wrapup
 
 I wrote this because I wanted to remember what confused the first time.
 
