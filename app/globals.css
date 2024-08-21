@@ -8,7 +8,6 @@
   }
 }
 
-
 .blog-content {
   @apply text-base;
 }
@@ -18,7 +17,7 @@
 }
 
 .blog-content .prose a {
-  @apply text-blue-600 underline;
+  @apply text-blue-600 dark:text-blue-400 underline;
 }
 
 .blog-content .prose h1,
@@ -28,4 +27,29 @@
 .blog-content .prose h5,
 .blog-content .prose h6 {
   @apply text-black dark:text-white;
+}
+
+/* CalloutBox specific styles */
+.callout-box {
+  @apply bg-blue-100 dark:bg-blue-900 border-l-4 border-blue-500 dark:border-blue-400 rounded-r-md p-3 my-4 text-sm;
+}
+
+.callout-box-header {
+  @apply flex items-center mb-2;
+}
+
+.callout-box-icon {
+  @apply text-xl mr-2;
+}
+
+.callout-box-heading {
+  @apply font-semibold text-blue-700 dark:text-blue-300;
+}
+
+.callout-box-content {
+  @apply text-black dark:text-white;
+}
+
+.callout-box-content a {
+  @apply text-blue-600 dark:text-blue-400 underline;
 }
