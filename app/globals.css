@@ -31,25 +31,30 @@
 
 /* CalloutBox specific styles */
 .callout-box {
-  @apply bg-blue-100 dark:bg-blue-900 border-l-4 border-blue-500 dark:border-blue-400 rounded-r-md p-3 my-4 text-sm;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #f8fafc;
 }
 
 .callout-box-header {
-  @apply flex items-center mb-1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .callout-box-icon {
-  @apply text-xl mr-1;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 .callout-box-heading {
-  @apply font-semibold text-blue-700 dark:text-blue-300;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .callout-box-content {
-  @apply text-black dark:text-white;
-}
-
-.callout-box-content a {
-  @apply text-blue-600 dark:text-blue-400 underline;
+  margin-top: 0.5rem;
 }
