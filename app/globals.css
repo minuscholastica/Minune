@@ -29,32 +29,3 @@
   @apply text-black dark:text-white;
 }
 
-/* CalloutBox specific styles */
-.callout-box {
-  border: 1px solid #e2e8f0;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  margin: 1rem 0;
-  background-color: #f8fafc;
-}
-
-.callout-box-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-
-.callout-box-icon {
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
-}
-
-.callout-box-heading {
-  margin: 0;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.callout-box-content {
-  margin-top: 0.5rem;
-}
