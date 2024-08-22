@@ -1,20 +1,19 @@
-'use client';
-
 import React from 'react';
 
 interface CalloutBoxProps {
   children: React.ReactNode;
   heading?: string;
+  icon?: string;
 }
 
-const CalloutBox: React.FC<CalloutBoxProps> = ({ children, heading }) => {
+const CalloutBox: React.FC<CalloutBoxProps> = ({ children, heading, icon = '💡' }) => {
   return (
-    <div className="callout-box bg-blue-50 dark:bg-blue-100 p-4 rounded-lg my-4">
-      <div className="callout-box-header flex items-center mb-2">
-        <span className="callout-box-icon text-2xl mr-2">💡</span>
-        {heading && <h4 className="callout-box-heading text-lg font-semibold">{heading}</h4>}
+    <div className="border border-gray-200 rounded-lg p-4 my-4 bg-gray-50">
+      <div className="flex items-center mb-2">
+        <span className="text-2xl mr-2">{icon}</span>
+        {heading && <h4 className="text-xl font-bold m-0">{heading}</h4>}
       </div>
-      <div className="callout-box-content text-gray-800 dark:text-gray-900">{children}</div>
+      <div className="mt-2 text-gray-800">{children}</div>
     </div>
   );
 };
