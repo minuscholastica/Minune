@@ -3,6 +3,9 @@ import path from 'path'
 import matter from 'gray-matter'
 import { markdownToHtml } from '../../lib/markdown'
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
+import Link from 'next/link'
+import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa'
 
 const ContentRenderer = dynamic(() => import('../../../components/ContentRenderer'), { ssr: false })
 
@@ -13,14 +16,10 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const processedContent = await markdownToHtml(content)
 
   return (
-
     <div>
       <h1 className="text-3xl font-bold mb-4">{data.title}</h1>
       <p className="text-gray-500 mb-4">{data.date}</p>
       <ContentRenderer content={processedContent} />
-    </div>
-  )
-}
 
       {/* Author section with top and bottom dividers */}
       <div className="mt-12 py-8 border-t border-b border-gray-300 dark:border-gray-700">
@@ -37,7 +36,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
             </Link>
             <div>
               <h3 className="font-bold">Minu Choi</h3>
-              <p className="text-gray-500 text-sm">{postData.date}</p>
+              <p className="text-gray-500 text-sm">{data.date}</p>
             </div>
           </div>
           <div className="flex space-x-4">
@@ -54,5 +53,5 @@ export default async function Post({ params }: { params: { slug: string } }) {
         </div>
       </div>
     </div>
-  );
+  )
 }

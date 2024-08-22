@@ -60,7 +60,7 @@ That actually made me overcome a big part of my writer's blog.
 
 In a world where Lumentis exists, I'm basically writing every day. It can't be that hard.
 
-1. **Put it out there - for the hype**
+3. **Put it out there - for the hype**
 
 Sharing what I wrote really helped, no matter what stage it's at. I largely felt reluctant to put out a raw form of thoughts out there for world to see.
 
