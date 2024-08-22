@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import React from 'react';
-import dynamic from 'next/dynamic';
+import React from "react";
+import dynamic from "next/dynamic";
 
-const CalloutBox = dynamic(() => import('./CalloutBox'), { ssr: false });
+const CalloutBox = dynamic(() => import("./CalloutBox"), { ssr: false });
 
 interface ContentRendererProps {
   content: string;
@@ -19,7 +19,12 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({ content }) => {
     while ((match = regex.exec(content)) !== null) {
       if (match.index > lastIndex) {
         parts.push(
-          <div key={lastIndex} dangerouslySetInnerHTML={{ __html: content.slice(lastIndex, match.index) }} />
+          <div
+            key={lastIndex}
+            dangerouslySetInnerHTML={{
+              __html: content.slice(lastIndex, match.index),
+            }}
+          />
         );
       }
 
@@ -38,7 +43,10 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({ content }) => {
 
     if (lastIndex < content.length) {
       parts.push(
-        <div key={lastIndex} dangerouslySetInnerHTML={{ __html: content.slice(lastIndex) }} />
+        <div
+          key={lastIndex}
+          dangerouslySetInnerHTML={{ __html: content.slice(lastIndex) }}
+        />
       );
     }
 
