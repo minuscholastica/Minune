@@ -2,6 +2,7 @@
 title: "(Draft) On Building this Website"
 subtitle: "Shoutout to the Olickel"
 date: "21 August 2024"
+completed: false 
 ---
 
 ## Before Reading:
