@@ -9,7 +9,7 @@ These days, I think about a chicken-and-egg problem while engaging with a cool s
 
 Originally from South Korea, I relocated to Singapore to study Intellectual History and Computational Physics at Yale-NUS College. Since then, I've tackled a few exciting projects - here are some:
 
-> [!note] 
+> [!note] Projects
 >
 > - [**Woochi:**](https://www.woochi.ai) AI-powered regulatory compliance solutions leveraging successful ISO compliance experience.
 >
@@ -19,7 +19,7 @@ Originally from South Korea, I relocated to Singapore to study Intellectual Hist
 > - [**Digital Numismatics Research:**](https://www.yale-nus.edu.sg/story/20-november-2020-yale-nus-students-step-outside-their-majors-to-embark-on-interdisciplinary-research-projects/) Image detection algorithm optimization for Roman coin classification. (Publication in review)
 
 Some papers I've worked on:
-> [!note]
+> [!note] Papers
 >
 > - [**Numerical simulation of microscopic thermalization in a one-dimensional harmonically trapped gas coupled to a chain of masses**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Mf6g9jUAAAAJ&citation_for_view=Mf6g9jUAAAAJ:u-x6o8ySG0sC)
 > - [**Development and Validation of remote Photoplethysmography (rPPG) Technology for Blood Pressure and Hemoglobin Level Assessment in the Preoperative Assessment Setting**](https://preprints.jmir.org/preprint/60455)
