@@ -1,3 +1,4 @@
+import React from 'react'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -11,51 +12,54 @@ import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa'
 const ContentRenderer = dynamic(() => import('../../../components/ContentRenderer'), { ssr: false })
 
 export default async function Post({ params }: { params: { slug: string } }) {
-  const fullPath = path.join(process.cwd(), 'app/_posts', `${params.slug}.md`)
+  const fullPath = path.join(process.cwd(), 'app', '_posts', `${params.slug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
   const processedContent = await markdownToHtml(content)
   const relatedPosts = getRelatedPosts(params.slug)
 
+  const isAboutPage = params.slug === 'about-me'
+
   return (
     <div>
       <h1 className="text-3xl font-bold mb-4">{data.title}</h1>
-      <p className="text-gray-500 mb-4">{data.date}</p>
+      {data.subtitle && <h2 className="text-xl mb-4">{data.subtitle}</h2>}
+      {!isAboutPage && <p className="text-gray-500 mb-4">{data.date}</p>}
       <ContentRenderer content={processedContent} />
 
-      {/* Author section with top and bottom dividers */}
       <div className="mt-12 py-8 border-t border-b border-gray-300 dark:border-gray-700">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="mr-4">
+            <Link href="/">
               <Image 
                 src="/Minu2.jpeg"
-                alt="Author"
+                alt="Minu Choi"
                 width={60}
                 height={60}
-                className="rounded-full cursor-pointer"
+                className="rounded-full mr-4"
               />
             </Link>
             <div>
               <h3 className="font-bold">Minu Choi</h3>
-              <p className="text-gray-500 text-sm">{data.date}</p>
+              {isAboutPage && data.birthday && (
+                <p className="text-sm text-gray-500">{data.birthday}</p>
+              )}
             </div>
           </div>
           <div className="flex space-x-4">
-            <a href="https://www.linkedin.com/in/minu-choi-2aa642211" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.linkedin.com/in/minu-choi-2aa642211" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={24} className="text-gray-600 hover:text-blue-600" />
-            </a>
-            <a href="https://twitter.com/minune29" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://twitter.com/minune29" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={24} className="text-gray-600 hover:text-blue-400" />
-            </a>
-            <a href="https://github.com/minuscholastica" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://github.com/minuscholastica" target="_blank" rel="noopener noreferrer">
               <FaGithub size={24} className="text-gray-600 hover:text-gray-900" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
 
-      {/* Related Posts Section */}
       {relatedPosts.length > 0 && (
         <div className="mt-12">
           <h2 className="text-2xl font-bold mb-6">Related Posts</h2>
@@ -76,4 +80,15 @@ export default async function Post({ params }: { params: { slug: string } }) {
       )}
     </div>
   )
+}
+
+export async function generateStaticParams() {
+  const postsDirectory = path.join(process.cwd(), 'app', '_posts')
+  const filenames = fs.readdirSync(postsDirectory)
+
+  return filenames
+    .filter(filename => filename.endsWith('.md') && !filename.startsWith('.'))
+    .map((filename) => ({
+      slug: filename.replace(/\.md$/, ''),
+    }))
 }
