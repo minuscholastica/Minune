@@ -812,10 +812,3 @@ my-blog/
 ```
 
 That said, this is me getting pretty excited to write more, and stack it in this new blog.
-
-> [!tip] Briefly on the Name of the Blog
-> Briefly on the name of the blog, if anyone's interested:
->
-> Minu is obviously my name, Minune (미누네) in Korean is Minu's place.
->
-> Very randomly, Minune in Romanian means wonderful, so there's that ;)

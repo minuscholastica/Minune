@@ -35,16 +35,6 @@ export default async function About() {
     <div className="mt-8">
       {title && <h1 className="text-3xl font-bold mb-4">{title}</h1>}
       
-      <div className="flex flex-col items-center mb-8">
-        <Image
-          src="/Minu2.jpeg"
-          alt="Minu Choi"
-          width={150}
-          height={150}
-          className="rounded-full mb-4"
-        />
-      </div>
-      
       <div className="space-y-4">
         <ContentRenderer content={contentHtml} />
       </div>
@@ -53,15 +43,18 @@ export default async function About() {
       <div className="mt-12 py-8 border-t border-b border-gray-300 dark:border-gray-700">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <Image 
-              src="/Minu2.jpeg"
-              alt="Minu Choi"
-              width={60}
-              height={60}
-              className="rounded-full mr-4"
-            />
+            <Link href="/">
+              <Image 
+                src="/Minu2.jpeg"
+                alt="Minu Choi"
+                width={60}
+                height={60}
+                className="rounded-full mr-4"
+              />
+            </Link>
             <div>
               <h3 className="font-bold">Minu Choi</h3>
+              <p className="text-sm text-gray-500">Feb 9th 1999</p>
             </div>
           </div>
           <div className="flex space-x-4">

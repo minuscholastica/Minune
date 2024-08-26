@@ -1,5 +1,8 @@
 ---
-title: Briefly About Me 
+title: 'Briefly About Me'
+subtitle: 'Minwoo (Minu) Choi'
+date: '19 August 2024'
+completed: true 
 ---
 
 These days, I think about a chicken-and-egg problem while engaging with a cool startup: using AI to transform how we handle data, which is essential to better use of AI. On the side, I enjoy crafting narratives that makes complex tech accessible.
