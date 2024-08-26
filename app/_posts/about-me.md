@@ -30,7 +30,7 @@ Drop me a message if any of this resonates with you, would love to chat!
 
 > [!tip] Briefly on the Name of the Blog
 >
-> Minu is obviously my name, Minune (미누네) in Korean is Minu's place.
+> Minu is obviously my name (while it is also Minwoo on legal documents), Minune (미누네) in Korean is Minu's place.
 >
 > Very randomly, Minune in Romanian means wonderful, so there's that 😉 
 
