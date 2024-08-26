@@ -2,42 +2,35 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import { remark } from 'remark';
+import html from 'remark-html';
 
-export default function About() {
+async function getAboutContent() {
+  const filePath = path.join(process.cwd(), 'app', 'about', 'about.md');
+  const fileContents = fs.readFileSync(filePath, 'utf8');
+  const { data, content } = matter(fileContents);
+
+  const processedContent = await remark()
+    .use(html)
+    .process(content);
+  const contentHtml = processedContent.toString();
+
+  return {
+    contentHtml,
+    ...data,
+  };
+}
+
+export default async function About() {
+  const { contentHtml } = await getAboutContent();
+
   return (
     <div className="mt-8">
-      <div className="flex flex-col items-center mb-8">
-        <Image
-          src="/Minu2.jpeg"
-          alt="Minu"
-          width={150}
-          height={150}
-          className="rounded-full mb-4"
-        />
-        <h1 className="text-3xl font-bold mb-4">About Me</h1>
-      </div>
-      
       <div className="space-y-4">
-        <p>
-          These days, I think about a chicken-and-egg problem while engaging with a cool startup: using AI to transform how we handle data, which is essential to better use of AI. On the side, I enjoy crafting narratives that makes complex tech accessible.
-        </p>
-        
-        <p>
-          Originally from South Korea, I relocated to Singapore to study Intellectual History and Computational Physics at Yale-NUS College. Since then, I&apos;ve tackled a few exciting projects - here are some:
-        </p>
-        
-        <ul className="list-disc pl-5 space-y-2">
-          <li><strong>Woochi:</strong> AI-powered regulatory compliance solutions leveraging successful ISO compliance experience.</li>
-          <li><strong>PreternaturalAI:</strong> Conceptual documentation on text embedding and RAG pipelines for AI newcomers.</li>
-          <li><strong>Nervotec:</strong> Product management and ISO 13485, FDA, and HSA compliance at AI-driven digital health startup.</li>
-          <li><strong>HubSpot:</strong> Strategic CRM consulting for startups, scaling sales operations and customer retention.</li>
-          <li><strong>Digital Numismatics Research:</strong> Image detection algorithm optimization for Roman coin classification.</li>
-        </ul>
-        
-        <p>
-          I&apos;m always on the lookout to explore exciting problems, solutions, and, of course, effective ways to capture such insights. Drop me a message if any of this resonates with you!
-        </p>
-
+        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
       </div>
       
       <div className="mt-8 flex justify-center space-x-4">
