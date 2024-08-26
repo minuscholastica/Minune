@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { markdownToHtml } from '../../lib/markdown'
+import { getRelatedPosts, PostData } from '../../lib/posts'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -14,6 +15,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
   const processedContent = await markdownToHtml(content)
+  const relatedPosts = getRelatedPosts(params.slug)
 
   return (
     <div>
@@ -27,7 +29,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
           <div className="flex items-center">
             <Link href="/" className="mr-4">
               <Image 
-                src="/Minu2.jpeg"  // Make sure this path is correct
+                src="/Minu2.jpeg"
                 alt="Author"
                 width={60}
                 height={60}
@@ -52,6 +54,26 @@ export default async function Post({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </div>
+
+      {/* Related Posts Section */}
+      {relatedPosts.length > 0 && (
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold mb-6">Related Posts</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {relatedPosts.map((post: PostData) => (
+              <Link href={`/posts/${post.id}`} key={post.id} className="block hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
+                  {post.subtitle && (
+                    <p className="text-gray-600 dark:text-gray-300 mb-2">{post.subtitle}</p>
+                  )}
+                  <p className="text-sm text-gray-500">{post.date}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

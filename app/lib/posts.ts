@@ -35,6 +35,13 @@ export function getSortedPostsData() {
   })
 }
 
+export function getRelatedPosts(currentPostId: string, count: number = 4): PostData[] {
+  const allPosts = getSortedPostsData()
+  return allPosts
+    .filter(post => post.id !== currentPostId && post.completed)
+    .slice(0, count)
+}
+
 // Updated type definition for the post data
 export type PostData = {
   id: string;
