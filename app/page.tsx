@@ -1,3 +1,4 @@
+// app/page.tsx
 import { getSortedPostsData } from './lib/posts'
 import PostList from '../components/PostList'
 
