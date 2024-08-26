@@ -1,7 +1,7 @@
 ---
-title: 'Briefly About Me'
-subtitle: 'Minwoo (Minu) Choi'
-date: '19 August 2024'
+title: "Briefly About Me"
+subtitle: "Minwoo (Minu) Choi"
+date: "19 August 2024"
 completed: true 
 ---
 
@@ -9,7 +9,10 @@ These days, I think about a chicken-and-egg problem while engaging with a cool s
 
 Originally from South Korea, I relocated to Singapore to study Intellectual History and Computational Physics at Yale-NUS College. Since then, I've tackled a few exciting projects - here are some:
 
-> [!note] - [**Woochi:**](https://www.woochi.ai) AI-powered regulatory compliance solutions leveraging successful ISO compliance experience.
+> [!note] 
+>
+> - [**Woochi:**](https://www.woochi.ai) AI-powered regulatory compliance solutions leveraging successful ISO compliance experience.
+>
 > - [**PreternaturalAI:**](https://preternatural.ai) Conceptual documentation on text embedding and RAG pipelines for AI newcomers.
 > - [**Nervotec:**](https://www.nervotec.com) Product management and ISO 13485, FDA, and HSA compliance at AI-driven digital health startup.
 > - [**HubSpot:**](https://www.hubspot.com) Strategic CRM consulting for startups, scaling sales operations and customer retention.
@@ -24,7 +27,6 @@ I'm always on the lookout to explore exciting problems, solutions, and, of cours
 Drop me a message if any of this resonates with you, would love to chat! 
 
 > [!tip] Briefly on the Name of the Blog
-> Briefly on the name of the blog, if anyone's interested:
 >
 > Minu is obviously my name, Minune (미누네) in Korean is Minu's place.
 >
