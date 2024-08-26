@@ -1,6 +1,6 @@
 ---
 title: "Briefly About Me"
-subtitle: "Minwoo (Minu) Choi"
+subtitle: "Minwoo, Minu, 민우, at random points, Scholastica"
 date: "19 August 2024"
 completed: true
 birthday: "9 Feb 1999"
