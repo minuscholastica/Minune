@@ -1,13 +1,13 @@
+// components/PostList.tsx
 import Link from 'next/link'
-import { PostData } from '../app/lib/posts'  
+import { PostData } from '../app/lib/posts'
 
 type PostListProps = {
   posts: PostData[];
-  showAll?: boolean; // New prop to control whether to show all posts or only completed ones
+  showAll?: boolean;
 }
 
 export default function PostList({ posts, showAll = false }: PostListProps) {
-  // If showAll is true, use all posts; otherwise, filter for completed posts
   const displayPosts = showAll ? posts : posts.filter(post => post.completed)
 
   return (

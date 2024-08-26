@@ -5,8 +5,8 @@ import { Metadata } from "next";
 import ClientLayout from "./ClientLayout";
 
 export const metadata: Metadata = {
-  title: "Minune",
-  description: "Untimely Meditations at Minune",
+  title: "MinunÊ",
+  description: "Untimely Meditations at MinunÊ",
   icons: {
     icon: "/favicon.png",
     apple: "/favicon.png",
