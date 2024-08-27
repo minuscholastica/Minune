@@ -145,19 +145,19 @@ Then, it will ask you bunch of configuration questions:
 > 
 > It's a tool that identifies and reports on patterns in JavaScript, helping maintain code quality and consistency.
 >
-> Would you like to use Tailwind CSS? … Yes, I found it useful.
+> - Would you like to use Tailwind CSS? … Yes, I found it useful.
 > 
 > It's a CSS framework that allows quick UI development with pre-built classes.
 > 
-> Would you like to use** `src/` **directory? … I said no, but personal preference for how to structure folders.
+> - Would you like to use** `src/` **directory? … I said no, but personal preference for how to structure folders.
 > 
 > It's an optional structure that places all your source code in a 'src' folder for better organization.
 > 
-> Would you like to use App Router? (recommended) … Yes, routing feature is cool.
+> - Would you like to use App Router? (recommended) … Yes, routing feature is cool.
 > 
 > Next.js 13+ feature that provides a new file-system based router with enhanced features and improved performance.
 > 
-> Would you like to customize the default import alias (@/\*)? … No, simply because I wanted minimal configuration effort, if not cruicial.
+> - Would you like to customize the default import alias (@/\*)? … No, simply because I wanted minimal configuration effort, if not cruicial.
 > 
 > A shortcut for importing modules, typically set to the root of your project for easier and cleaner imports.
 
