@@ -1,12 +1,12 @@
 ---
 title: "Briefly About Me"
-subtitle: "Minwoo, Minu, 민우, at random points, Scholastica"
+subtitle: "Minwoo, Minu, 민우, and at random points, Scholastica"
 date: "19 August 2024"
 completed: true
 birthday: "9 Feb 1999"
 ---
 
-These days, I think about a chicken-and-egg problem while engaging with a cool startup: using AI to transform how we handle data, which is essential to better use of AI. On the side, I enjoy crafting narratives that makes complex tech accessible.
+These days, I think about a chicken-and-egg problem while engaging with a cool startup by the name of Zensu: using AI to transform how we handle data, which is essential to better use of AI. On the side, I enjoy crafting narratives that makes complex tech accessible.
 
 Originally from South Korea, I relocated to Singapore to study Intellectual History and Computational Physics at Yale-NUS College. Since then, I've tackled a few exciting projects - here are some:
 
@@ -31,7 +31,7 @@ Drop me a message if any of this resonates with you, would love to chat!
 
 > [!tip] Briefly on the Name of the Blog
 >
-> Minu is obviously my name (while it is also Minwoo on legal documents), Minune (미누네) in Korean is Minu's place.
+> Minu is obviously my name (while it is also Minwoo on legal documents), and Minune (미누네) means Minu's place in Korean. 
 >
-> Very randomly, Minune in Romanian means wonderful, so there's that 😉 
+> Very randomly, Minune in Romanian means marvel or wonder, so there's that 😉 
 

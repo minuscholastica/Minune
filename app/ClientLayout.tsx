@@ -46,7 +46,7 @@ const ClientLayout: React.FC<{ children: React.ReactNode }> = ({
             />
           </Link>
           <div className="flex flex-col items-center">
-            <h1 className="text-3xl font-bold">Minune</h1>
+            <h1 className="text-3xl font-bold">MinunÊ</h1>
             <Link
               href="/about"
               className="text-sm mt-1 hover:text-gray-500 dark:hover:text-gray-400"
@@ -108,7 +108,7 @@ const ClientLayout: React.FC<{ children: React.ReactNode }> = ({
             className="rounded mb-2"
           />
           <div className="flex items-center space-x-2">
-            <p>© {new Date().getFullYear()} Minune</p>
+            <p>© {new Date().getFullYear()} MinunÊ</p>
             <span className="text-gray-400">|</span>
             <Link href="/admin" className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
               Admin

@@ -2,80 +2,76 @@
 title: "On Building this Website"
 subtitle: "Shoutout to the Olickel"
 date: "21 August 2024"
-completed: false 
+completed: true 
 ---
 
 ## Before Reading:
 
 This post comes in two parts.
 
-First is my latest thoughts on writing, mostly in conversations with a particular human being, and second is step-by-step of how this website was built.
+First is my latest thoughts on writing, mostly in conversations with a particular human being, and second is a step-by-step of how this website was built.
 
-Skip ahead to Building this Website part if that's what you're looking for!
+Skip ahead to "Part 2: Building this Website" if that's what you're looking for!
 
 ---
 
 ## Part 1: Slightly Long Preface
 
-Here are a few on my wishlist.
+Here are a few items on my wishlist: 
 
 - **I've always wanted to build a custom website.**
 
-  Call me caught up in minute details, but I wanted to create something that looked pretty to me to start with. I played around with a few platforms, but none gave me the satisfaction of "wow, here's a playground I want to frequent!"
+  Call me caught up in minute details, but I wanted to create a blog that looked simple and minimal. I played around with a few platforms, but none gave me the satisfaction of "wow, here's a playground I want to frequent!" 
 
 - **I've always wanted to write more, and consistently.**
 
   Writing is hard. Writing regularly is harder. Writing to satisfaction is the hardest.
 
-  Once I grew out of the habit of writing, because you know life happens, it was really difficult to go back to it.
+  Once I grew out of the habit of writing (life happens), it was really difficult to get back to it.
 
-I had a few conversations on this with Hrishi, our titular (or in this case, sub-titular) character for this post (and maybe good to mention that his last name is Olickel), who has an awesome habit of writing and has been a rock in my writing attempts, or any projects in general.
+I had a few conversations on this with Hrishi, Hrishi Olickel, our titular (or in this case, sub-titular) character for this post. He has an awesome habit of writing, and has been a rock in my writing attempts, or any projects in general.
 
-> [!note] A Good Writing Reference
+> [!note] A good writing reference, for quality references matter 
 > This is [his blog](https://olickel.com) by the way. Check it out!
 
-I often think the best way to learn anything is to learn from and observe someone who's been doing it for years. Hrishi's been writing in all the years I've known him, and I enjoyed reading them.
+I often think the best way to learn anything is to observe and learn from someone who's been doing it for years. Hrishi's been writing in all the years I've known him, and I've enjoyed reading them.
 
-And the cool thing about knowing the writer behind one of your favorite writings is you can get some good tips at random, say, while you're eating some good biryani together.
+The cool thing about knowing the writer behind one of your favorite works is getting some good tips at random, say, while you're eating some good biryani together.
 
-Here are some that stuck with me over time, some over good meals and some over my random call for help:
+Here are some insights that stuck with me over time, some shared over good meals and others during my random calls for help:
 
-1. **Just write.**
+1. **Just write, but write often** 
 
-This was a piece of advice and instruction that I found quite useful (and have struggled with for quite a while):
+This advice resonated with me: 
 
-_"Start one draft every three days (regardless of the completion of the previous one) and put down at least four bullet points per day, one draft or more."_
+"Start one draft every three days (regardless of the completion of the previous one) and put down at least four bullet points per day, one draft or more." 
 
-It made a lot of sense, from the very beginning. But then, the inevitable writer’s block hit—what should I write about? How should I write about it? Do I know enough?
+It made sense from the beginning, but then the inevitable writer's block hit—what should I write about? How should I approach it? Do I know enough?
 
 2. **Writing is basically just talking on paper, almost.**
 
-What helped me climb out of my writer's block (where dreams go to die, just kidding.) actually came from hearing about Hrishi's project Lumentis. Lumentis is an application Hrishi built and it does a simple, but life-changing thing.
+What helped me climb out of my writer's block (where dreams go to die, just kidding.) actually came from hearing about Hrishi's project, Lumentis. 
 
-You can record a meeting, or more usefully for me, yourself talking in your walks or runs, and then have Lumentis create your mumbo-jumbo ideas into a beautifully crafted documentation - I mean, ideas in aesthetic forms, who doesn't want that?
+Lumentis does a simple, but life-changing thing: it records your speech (during meetings or personal musings) and turns your mumbo-jumbo ideas into beautifully crafted documentation - I mean, ideas in aesthetic forms, who doesn't want that?
 
 > [!note] Another Cool Project
 > Here's [Lumentis](https://github.com/hrishioa/lumentis). Give it a go, I love it.
 
-That actually made me overcome a big part of my writer's blog.
-
-In a world where Lumentis exists, I'm basically writing every day. It can't be that hard.
+This realization helped me overcome a significant part of my writer's block. In a world where Lumentis exists, I'm essentially writing every day. It can't be that hard to keep it up. 
 
 3. **Put it out there - for the hype**
 
-Sharing what I wrote really helped, no matter what stage it's at. I largely felt reluctant to put out a raw form of thoughts out there for world to see.
+Sharing my writing, regardless of its stage, really helped. Initially, I was reluctant to put raw thoughts out there for the world to see. 
 
-To have someone read what I wrote, and encourage me to put it out there, whether it be a simple linkedin post or a shared Notion page where you know you have an audience, really hyped up writing for me.
+Having someone read my work and encourage me to share it, whether as a simple LinkedIn post or a shared Notion page, really hyped up writing for me. 
 
-It also helped to feel the excitement that there are people who want to write, and potentially, an entire community of friends ping-pong-ing with their fascinating thoughts.
+It also helped to feel the excitement of connecting with people who want to write, potentially creating an entire community of friends ping-ponging fascinating thoughts.
 
-This gave me a great headspace to write more aggressively, which brought me back to my long-awaited items in the bucket list. It felt like a good opportunity to cross out the two items in my bucket list at once.
+This train of thoughts in the past few weeks brought me back to my long-awaited bucket list items. It felt like the right time to cross out two items at once, hence I decided to build this blog. 
 
-Leveraging one of my favorite blog posts, I decided to create a blog.
+The process was overall pretty simple, just time-consuming in figuring out where and how to start.
 
-It was overall pretty simple, just took a lot of time figuring out where and how to start.
-
-This is why I decided to write this particular post, for those out there who has never built a website, but like the aesthetics of this one, and want to build it yourself.
+This is why I decided to write this particular post—for those who have never built a website but like the aesthetics of this one and want to build it themselves.
 
 ---
 
@@ -83,7 +79,7 @@ This is why I decided to write this particular post, for those out there who has
 
 I did look into some other platforms - like Wix or Substack and whatnot.
 
-In the end, I decided to build a custom blog using Vercel, simply because of 2 reasons:
+In the end, I decided to build a custom blog using Vercel, simply because of two reasons:
 
 - I wanted more control over how the blog looked. Essentially I wanted a really simple blog where I will only add more features and asethetic elements whenever it felt apt.
 
@@ -137,31 +133,33 @@ cd my-blog
 >
 > "ls" to see what's inside the folder.
 
-Then, it will ask you bunch of configuration questions.
+Then, it will ask you bunch of configuration questions:
 
-✔ _Would you like to use TypeScript?_ … Yes, easier.
-
-It's a typed superset of JavaScript that helps catch errors early and improves code quality.
-
-✔ _Would you like to use ESLint?_ … Yes, easier too.
-
-It's a tool that identifies and reports on patterns in JavaScript, helping maintain code quality and consistency.
-
-✔ _Would you like to use Tailwind CSS?_ … Yes, I found it useful.
-
-It's a CSS framework that allows quick UI development with pre-built classes.
-
-✔ _Would you like to use** `src/` **directory?_ … I said no, but personal preference for how to structure folders.
-
-It's an optional structure that places all your source code in a 'src' folder for better organization.
-
-✔ _Would you like to use App Router? (recommended)_ … Yes, routing feature is cool.
-
-Next.js 13+ feature that provides a new file-system based router with enhanced features and improved performance.
-
-✔ _Would you like to customize the default import alias (@/\*)?_ … No, simply because I wanted minimal configuration effort, if not cruicial.
-
-A shortcut for importing modules, typically set to the root of your project for easier and cleaner imports.
+> [!tip] Next.js setup 
+>
+> - Would you like to use TypeScript? … Yes, easier.
+> 
+> It's a typed superset of JavaScript that helps catch errors early and improves code quality.
+>
+> - Would you like to use ESLint? … Yes, easier too.
+> 
+> It's a tool that identifies and reports on patterns in JavaScript, helping maintain code quality and consistency.
+>
+> Would you like to use Tailwind CSS? … Yes, I found it useful.
+> 
+> It's a CSS framework that allows quick UI development with pre-built classes.
+> 
+> Would you like to use** `src/` **directory? … I said no, but personal preference for how to structure folders.
+> 
+> It's an optional structure that places all your source code in a 'src' folder for better organization.
+> 
+> Would you like to use App Router? (recommended) … Yes, routing feature is cool.
+> 
+> Next.js 13+ feature that provides a new file-system based router with enhanced features and improved performance.
+> 
+> Would you like to customize the default import alias (@/\*)? … No, simply because I wanted minimal configuration effort, if not cruicial.
+> 
+> A shortcut for importing modules, typically set to the root of your project for easier and cleaner imports.
 
 That's it, you just got yourself a few toolkits.
 
@@ -789,9 +787,9 @@ npx vercel —prod
 
 I wrote this because I wanted to remember what confused me the first time.
 
-Claude as always is really helpful, ask it for any funky behaviours!
+[Claude](https://claude.ai) as always is really helpful, ask it for any funky behaviours!
 
-When asking, useful to provide the folder structure tree, like this one:
+When asking it questions, useful to provide the folder structure tree, like this one:
 
 ```
 my-blog/
@@ -811,4 +809,4 @@ my-blog/
 └── ... (other files and directories)
 ```
 
-That said, this is me getting pretty excited to write more, and stack it in this new blog.
+That said, this is me getting excited to write more - stay tuned for more 😉 

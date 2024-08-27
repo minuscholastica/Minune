@@ -6,9 +6,9 @@ completed: true
 ---
 
 **ISO 13485 compliance can be a single Notion page.**
-We just received ours at Nervotec, my ex-workplace. 🎉
+We just received ours at Nervotec, a company I previously worked for as a Product Manager. 🎉
 
-As the project lead, I was excited to hear the news just days before moving on to my new chapter.
+As the ISO project lead, I was excited to hear the news just days before moving on to my new chapter.
 
 > [!note] For those unfamiliar, ISO 13485 is the regulatory standard for Medical Device quality management systems. It's almost a prerequisite for startups in healthcare, often determining market entry, but can be a beast of a certification.
 
