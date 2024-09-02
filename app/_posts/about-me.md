@@ -14,7 +14,7 @@ Originally from South Korea, I relocated to Singapore to study Intellectual Hist
 >
 > - [**Meta**](https://www.meta.com/): Technical optimization of advertising solutions for the Korean market, providing strategic guidance on signal, measurement, and delivery to enhance client performance and adoption.
 >
-> - [**Woochi:**](https://www.woochi.ai) AI-powered regulatory compliance solutions leveraging successful ISO compliance experience.
+> - [**Woochi:**](https://adjoining-columnist-e98.notion.site/Woochi-ai-0e30418e5f434d3e870f7f5264dc5752) AI-powered regulatory compliance solutions leveraging successful ISO compliance experience.
 >
 > - [**PreternaturalAI:**](https://preternatural.ai) Conceptual documentation on text embedding and RAG pipelines for AI newcomers.
 > - [**Nervotec:**](https://www.nervotec.com) Product management and ISO 13485, FDA, and HSA compliance at AI-driven digital health startup.
