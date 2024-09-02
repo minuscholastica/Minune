@@ -12,6 +12,8 @@ Originally from South Korea, I relocated to Singapore to study Intellectual Hist
 
 > [!note] Projects
 >
+> - [**Meta**](https://www.meta.com/): Technical optimization of advertising solutions for the Korean market, providing strategic guidance on signal, measurement, and delivery to enhance client performance and adoption.
+>
 > - [**Woochi:**](https://www.woochi.ai) AI-powered regulatory compliance solutions leveraging successful ISO compliance experience.
 >
 > - [**PreternaturalAI:**](https://preternatural.ai) Conceptual documentation on text embedding and RAG pipelines for AI newcomers.
